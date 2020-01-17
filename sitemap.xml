@@ -1,15 +1,15 @@
 
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//pardotrader.github.io/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//pardotrader.test/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<sitemap>
-		<loc>https://pardotrader.github.io/post-sitemap.xml</loc>
+		<loc>https://pardotrader.test/post-sitemap.xml</loc>
 		<lastmod>2020-01-15T20:38:19+00:00</lastmod>
 	</sitemap>
 	<sitemap>
-		<loc>https://pardotrader.github.io/page-sitemap.xml</loc>
+		<loc>https://pardotrader.test/page-sitemap.xml</loc>
 	</sitemap>
 	<sitemap>
-		<loc>https://pardotrader.github.io/category-sitemap.xml</loc>
+		<loc>https://pardotrader.test/category-sitemap.xml</loc>
 		<lastmod>2020-01-15T20:38:19+00:00</lastmod>
 	</sitemap>
 </sitemapindex>
