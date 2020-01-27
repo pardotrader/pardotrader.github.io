@@ -20,22 +20,22 @@
 <link rel="preload" href="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" as="script">
 <title>PardoTrader - Trades e Investimentos - @pardotrader</title>
 
-<!-- This site is optimized with the Yoast SEO plugin v12.8.1 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="@pardotrader"/>
+<!-- This site is optimized with the Yoast SEO plugin v12.9.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="PardoTrader - Trades e Investimentos - @pardotrader"/>
 <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
 <link rel="canonical" href="https://pardotrader.github.io/" />
 <link rel="next" href="https://pardotrader.github.io/page/2/" />
 <meta property="og:locale" content="pt_BR" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="PardoTrader - Trades e Investimentos - @pardotrader" />
-<meta property="og:description" content="@pardotrader" />
+<meta property="og:description" content="PardoTrader - Trades e Investimentos - @pardotrader" />
 <meta property="og:url" content="https://pardotrader.github.io/" />
 <meta property="og:site_name" content="PardoTrader - Trades e Investimentos" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:description" content="@pardotrader" />
+<meta name="twitter:description" content="PardoTrader - Trades e Investimentos - @pardotrader" />
 <meta name="twitter:title" content="PardoTrader - Trades e Investimentos - @pardotrader" />
 <meta name="twitter:site" content="@pardotrader" />
-<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://pardotrader.github.io/#website","url":"https://pardotrader.github.io/","name":"PardoTrader - Trades e Investimentos","description":"@pardotrader","potentialAction":{"@type":"SearchAction","target":"https://pardotrader.github.io/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"CollectionPage","@id":"https://pardotrader.github.io/#webpage","url":"https://pardotrader.github.io/","inLanguage":"pt-BR","name":"PardoTrader - Trades e Investimentos - @pardotrader","isPartOf":{"@id":"https://pardotrader.github.io/#website"},"description":"@pardotrader"}]}</script>
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://pardotrader.github.io/#organization","name":"pardotrader","url":"https://pardotrader.github.io/","sameAs":["https://twitter.com/pardotrader"],"logo":{"@type":"ImageObject","@id":"https://pardotrader.github.io/#logo","url":"https://pardotrader.github.io/img/pardotrader-logo.png","width":500,"height":500,"caption":"pardotrader"},"image":{"@id":"https://pardotrader.github.io/#logo"}},{"@type":"WebSite","@id":"https://pardotrader.github.io/#website","url":"https://pardotrader.github.io/","name":"PardoTrader - Trades e Investimentos","description":"@pardotrader","publisher":{"@id":"https://pardotrader.github.io/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://pardotrader.github.io/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"CollectionPage","@id":"https://pardotrader.github.io/#webpage","url":"https://pardotrader.github.io/","inLanguage":"pt-BR","name":"PardoTrader - Trades e Investimentos - @pardotrader","isPartOf":{"@id":"https://pardotrader.github.io/#website"},"about":{"@id":"https://pardotrader.github.io/#organization"},"description":"PardoTrader - Trades e Investimentos - @pardotrader"}]}</script>
 <!-- / Yoast SEO plugin. -->
 
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
@@ -79,6 +79,9 @@
   margin:auto;
   max-width:600px;
 	padding: 10px;
+}
+#tradingview_3ef42 {
+    height: 600px;
 }		</style>
 		</head>
 
@@ -175,13 +178,11 @@
 <div class="clearfix"></div>
 
 	<div id="content" class="site-content" role="main">
-	<div class='code-block code-block-2' style='margin: 8px 0; clear: both;'>
-<div class="busca">
+	<div class="busca">
 <br>
 <script async src="https://cse.google.com/cse.js?cx=018071405597586657367:qhqy6yo3mck"></script>
 <div class="gcse-searchbox-only"></div>
-</div></div>
-
+</div>
 <!-- Blog & Sidebar Section -->
 <section class="page-wrapper">
 	<div class="container">
@@ -259,17 +260,27 @@
 
 
 <!-- TradingView Widget BEGIN -->
-<script src="https://s3.amazonaws.com/tradingview/tv.js" type="text/javascript"></script>
-<script type="text/javascript">
-new TradingView.widget({
-  "width": 690,
-  "height": 400,
+<div class="tradingview-widget-container">
+  <div id="tradingview_3ef42"></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "autosize": true,
   "symbol": "CME:SP1!",
   "interval": "D",
-  "toolbar_bg": "#E4E8EB",
-  "allow_symbol_change": true
-});
-</script>
+  "timezone": "Etc/UTC",
+  "theme": "Light",
+  "style": "1",
+  "locale": "br",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "allow_symbol_change": true,
+  "container_id": "tradingview_3ef42"
+}
+  );
+  </script>
+</div>
 <!-- TradingView Widget END -->
 
 
@@ -719,13 +730,12 @@ new TradingView.widget({
  
 <div class="clearfix"></div>
 
-<div class='code-block code-block-1' style='margin: 8px 0; clear: both;'>
 <div class="busca">
 <h2>Disclaimer</h2>
 <p>As informações aqui disponibilizadas possuem caráter genérico e não constituem aconselhamento ou recomendação de investimentos, solicitação de compra ou venda de valores mobiliários, produtos ou quaisquer ativos financeiros. As Informações não se destinam e não foram objeto de avaliação sobre sua adequação ao perfil de investidores individuais ou grupo de investidores específicos. A incorporação das Informações a eventual decisão de investimento deverá ser efetuada após a análise independente pelo investidor, com base em todas as informações relevantes publicamente disponíveis. As Informações foram obtidas de fontes publicamente disponíveis e não foram objeto de investigação, sobre sua veracidade, consistência, completude, suficiência ou atualidade.</p>
 <p>O blog não poderá ser responsabilizada por quaisquer perdas e danos ou lucros cessantes porventura resultantes de sua utilização.</p>
 <p>Siga meu twitter: <a target="_blank" rel="nofollow" rel="noopener" href="https://twitter.com/pardoTRADER">pardoTRADER</a></p>
-</div></div>
+</div>
 <!--======================================
     Footer Section
 ========================================-->
