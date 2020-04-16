@@ -12,8 +12,8 @@
     .page-breadcrumb {
 		text-align: right;
     }
-	ul.payment-icon {
-		text-align: left;
+	p.copyright, ul.payment-icon {
+		text-align: center;
 	}
 	/*---------------------------------------
     Home Slider
@@ -73,8 +73,8 @@
     .page-breadcrumb {
 		text-align: right;
     }
-	ul.payment-icon {
-		text-align: left;
+	p.copyright, ul.payment-icon {
+		text-align: center;
 	}
 	/*---------------------------------------
     Home Slider
@@ -168,7 +168,7 @@
              -o-transition: all 200ms ease-out;
                 transition: all 200ms ease-out;
     }
-	ul.payment-icon {
-		text-align: left;
+	p.copyright, ul.payment-icon {
+		text-align: center;
 	}
 }
