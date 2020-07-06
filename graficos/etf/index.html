@@ -8,23 +8,15 @@
 <link rel="dns-prefetch" href="https://br.advfn.com">
 </head>
 <style>
-.parent {
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-grid-template-rows: repeat(2, 1fr);
-grid-column-gap: 2px;
-grid-row-gap: 2px;
-.div1 { grid-area: 1 / 1 / 2 / 2; }
-.div2 { grid-area: 1 / 2 / 2 / 3; }
-.div3 { grid-area: 1 / 3 / 2 / 4; }
-.div4 { grid-area: 1 / 4 / 2 / 5; }
-.div5 { grid-area: 2 / 1 / 3 / 2; }
-.div6 { grid-area: 2 / 2 / 3 / 3; }
-.div7 { grid-area: 2 / 3 / 3 / 4; }
-.div8 { grid-area: 2 / 4 / 3 / 5; }
-}
+.parent{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(2,1fr);grid-column-gap:2px;grid-row-gap:2px}.div2{grid-area:1/2/2/3}.div3{grid-area:1/3/2/4}.div4{grid-area:1/4/2/5}.div5{grid-area:2/1/3/2}.div6{grid-area:2/2/3/3}.div7{grid-area:2/3/3/4}.div8{grid-area:2/4/3/5}
 </style>
 <script data-cfasync="false">
+function setCookie(cname, cvalue, exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires="+ d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
 function getCookie(cname) {
   var name = cname + "=";
   var decodedCookie = decodeURIComponent(document.cookie);
@@ -39,12 +31,6 @@ function getCookie(cname) {
     }
   }
   return "";
-}
-function setCookie(cname, cvalue, exdays) {
-  var d = new Date();
-  d.setTime(d.getTime() + (exdays*24*60*60*1000));
-  var expires = "expires="+ d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
  function graf1() {
     var input1 = document.getElementById('input1').value    
@@ -98,7 +84,7 @@ function setCookie(cname, cvalue, exdays) {
 <body>
 <div class="parent">
 <div id="div1">
-    <input type="text" id="input" value="BOV:" class="form-control"> <span class="input-group-btn">
+    <input type="text" id="input1" value="BOV:" class="form-control"> <span class="input-group-btn">
         <input type="submit" value="OK" onclick="graf1();" class="btn btn-success"/> XBOV11				  
                   <img id="image1" src="https://br.advfn.com/p.php?pid=staticchart&s=BOV:XBOV11&t=23&p=3&dm=2&vol=0&width=500&height=500"/>
             </span>
