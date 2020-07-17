@@ -11,10 +11,6 @@
 .parent{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr);grid-column-gap:0;grid-row-gap:0}.div1{grid-area:1/1/2/2}.div2{grid-area:1/2/2/3}.div3{grid-area:1/3/2/4}.div4{grid-area:2/1/3/2}.div5{grid-area:2/2/3/3}.div6{grid-area:2/3/3/4}
 </style>
 <script data-cfasync="false">
-var input1 = "DOLQ20";
-var input2 = "WINQ20";
-var input3 = "DOLQ20";
-var input4 = "WINQ20";
 function setCookie(cname, cvalue, exdays) {
   var d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -37,37 +33,37 @@ function getCookie(cname) {
   return "";
 }
  function graf1() {
-     input1 = document.getElementById('input1').value    
+     var input1 = document.getElementById('input1').value    
      var img = document.getElementById('image1');
      img.src = "https://br.advfn.com/p.php?pid=staticchart&s=" + input1 + "&t=23&p=0&dm=2&vol=0&width=584&height=490";
      setCookie('graf1',input1,1000000);
  }
  function graf2() {
-     input2  document.getElementById('input2').value
-	var img = document.getElementById('image2');
+     var input2  document.getElementById('input2').value
+	 var img = document.getElementById('image2');
      img.src = "https://br.advfn.com/p.php?pid=staticchart&s=" + input2 + "&t=23&p=0&dm=2&vol=0&width=584&height=490";
      setCookie('graf2',input2,1000000);
  }
  function graf3() {
-     input3 = document.getElementById('input3').value    
+     var input3 = document.getElementById('input3').value    
      var img = document.getElementById('image3');
      img.src = "https://br.advfn.com/p.php?pid=staticchart&s=" + input3 + "&t=23&p=3&dm=2&vol=0&width=584&height=490";
      setCookie('graf3',input3,1000000);
  }
  function graf4() {
-    input4 = document.getElementById('input4').value    
+     var input4 = document.getElementById('input4').value    
      var img = document.getElementById('image4');
      img.src = "https://br.advfn.com/p.php?pid=staticchart&s=" + input4 + "&t=23&p=3&dm=2&vol=0&width=584&height=490";
      setCookie('graf4',input4,1000000);
  }
   function graf5() {
-    var input5 = document.getElementById('input5').value    
+     var input5 = document.getElementById('input5').value    
      var img = document.getElementById('image5');
      img.src = "https://br.advfn.com/p.php?pid=staticchart&s=" + input5 + "&t=23&p=3&dm=2&vol=0&width=584&height=490";
      setCookie('graf5',input5,1000000);
  }
   function graf6() {
-    var input6 = document.getElementById('input6').value    
+     var input6 = document.getElementById('input6').value    
      var img = document.getElementById('image6');
      img.src = "https://br.advfn.com/p.php?pid=staticchart&s=" + input6 + "&t=23&p=3&dm=2&vol=0&width=584&height=490";
      setCookie('graf6',input6,1000000);
