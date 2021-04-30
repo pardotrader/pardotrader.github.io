@@ -9,7 +9,23 @@
 </head>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5232270347895348" crossorigin="anonymous"></script>
 <style>
-.parent{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr);grid-column-gap:0;grid-row-gap:0}.div1{grid-area:1/1/2/2}.div2{grid-area:1/2/2/3}.div3{grid-area:1/3/2/4}.div4{grid-area:2/1/3/2}.div5{grid-area:2/2/3/3}.div6{grid-area:2/3/3/4}
+.parent {display: grid;
+grid-template-columns: repeat(4, 15%) repeat(4, 10%);
+grid-template-rows: repeat(4, 245px);
+grid-column-gap: 0px;
+grid-row-gap: 0px;}
+.div1 { grid-area: 1 / 1 / 3 / 3; }
+.div2 { grid-area: 1 / 3 / 3 / 5; }
+.div3 { grid-area: 3 / 1 / 5 / 3; }
+.div4 { grid-area: 3 / 3 / 5 / 5; }
+.div5 { grid-area: 1 / 5 / 2 / 7; }
+.div6 { grid-area: 2 / 5 / 3 / 7; }
+.div7 { grid-area: 1 / 7 / 2 / 9; }
+.div8 { grid-area: 2 / 7 / 3 / 9; }
+.div9 { grid-area: 3 / 5 / 4 / 7; }
+.div10 { grid-area: 4 / 5 / 5 / 7; }
+.div11 { grid-area: 3 / 7 / 4 / 9; }
+.div12 { grid-area: 4 / 7 / 5 / 9; }
 </style>
 <script data-cfasync="false">
 function setCookie(cname, cvalue, exdays) {
@@ -57,25 +73,13 @@ function getCookie(cname) {
      img.src = "https://br.advfn.com/p.php?pid=staticchart&s=" + input4 + "&t=23&p=3&dm=2&vol=0&width=465&height=440";
      setCookie('graf4',input4,1000000);
  }
-  function graf5() {
-     var input5 = document.getElementById('input5').value    
-     var img = document.getElementById('image5');
-     img.src = "https://br.advfn.com/p.php?pid=staticchart&s=" + input5 + "&t=23&p=3&dm=2&vol=0&width=465&height=440";
-     setCookie('graf5',input5,1000000);
- }
-  function graf6() {
-     var input6 = document.getElementById('input6').value    
-     var img = document.getElementById('image6');
-     img.src = "https://br.advfn.com/p.php?pid=staticchart&s=" + input6 + "&t=23&p=3&dm=2&vol=0&width=465&height=440";
-     setCookie('graf6',input6,1000000);
- }
 </script>
 <body>
 <div class="parent">
 <div id="div1">
     <input type="text" id="input1" value="" class="form-control"> <span class="input-group-btn">
-        <input type="submit" value="OK" onclick="graf1();" class="btn btn-success"/> WDOK21 5min		  
-                  <img id="image1" src="https://br.advfn.com/p.php?pid=staticchart&s=WDOK21&t=23&p=0&dm=2&vol=0&width=465&height=440"/>
+        <input type="submit" value="OK" onclick="graf1();" class="btn btn-success"/> WDOM21 5min
+	<img id="image1" src="https://br.advfn.com/p.php?pid=staticchart&s=WDOM21&t=23&p=0&dm=2&vol=0&width=465&height=440"/>
             </span>
 </div>
 <div class="div2">
@@ -86,27 +90,38 @@ function getCookie(cname) {
 </div>
 <div class="div3">
     <input type="text" id="input3" value="" class="form-control"> <span class="input-group-btn">
-        <input type="submit" value="OK" onclick="graf3();" class="btn btn-success"/> SP500 5min
-                  <img id="image3" src="https://finviz.com/fut_chart.ashx?t=ES&p=h1&rev=636983482825238999"/>
+        <input type="submit" value="OK" onclick="graf3();" class="btn btn-success"/> WDOM21 Diário
+                  <img id="image3" src="https://br.advfn.com/p.php?pid=staticchart&s=WDOM21&t=23&p=3&dm=2&vol=0&width=465&height=440"/>
             </span>
 </div>
 <div class="div4">
     <input type="text" id="input4" value="" class="form-control"> <span class="input-group-btn">
-        <input type="submit" value="OK" onclick="graf4();" class="btn btn-success"/> WDOK21 Diário
-                  <img id="image4" src="https://br.advfn.com/p.php?pid=staticchart&s=WDOK21&t=23&p=3&dm=2&vol=0&width=465&height=440"/>
+        <input type="submit" value="OK" onclick="graf4();" class="btn btn-success"/> WINM21 Diário
+                  <img id="image4" src="https://br.advfn.com/p.php?pid=staticchart&s=WINM21&t=23&p=3&dm=2&vol=0&width=465&height=440"/>
             </span>
 </div>
-<div class="div5">
-    <input type="text" id="input5" value="" class="form-control"> <span class="input-group-btn">
-        <input type="submit" value="OK" onclick="graf5();" class="btn btn-success"/> WINM21 Diário
-                  <img id="image5" src="https://br.advfn.com/p.php?pid=staticchart&s=WINM21&t=23&p=3&dm=2&vol=0&width=465&height=440"/>
-            </span>
+<div class="div5"><img id="image5" src="https://finviz.com/fut_image.ashx?es_m5_s.png"/>
 </div>
 <div class="div6">
-    <input type="text" id="input6" value="" class="form-control"> <span class="input-group-btn">
-        <input type="submit" value="OK" onclick="graf6();" class="btn btn-success"/> SP500 Diário
-                  <img id="image6" src="https://finviz.com/fut_chart.ashx?t=ES&p=d1&rev=636983482825238999"/>
-            </span>
+                  <img id="image6" src="https://finviz.com/fut_image.ashx?es_d1_s.png"/>
+</div>
+<div class="div7">
+                  <img id="image7" src="https://finviz.com/fut_image.ashx?nq_m5_s.png"/>
+</div>
+<div class="div8">
+                  <img id="image8" src="https://finviz.com/fut_image.ashx?nq_d1_s.png"/>
+</div>
+<div class="div9">
+                  <img id="image9" src="https://finviz.com/fut_image.ashx?vx_d1_s.png"/>
+</div>
+<div class="div10">
+                  <img id="image10" src="https://finviz.com/fut_image.ashx?gc_d1_s.png"/>
+</div>
+<div class="div11">
+                  <img id="image11" src="https://finviz.com/fut_image.ashx?qa_d1_s.png"/>
+</div>
+<div class="div12">
+                  <img id="image12" src="https://finviz.com/fut_image.ashx?zn_d1_s.png"/>
 </div>
 </div>
 </body>
