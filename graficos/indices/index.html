@@ -2,12 +2,11 @@
 <head>
   <title>Índice futuro</title>
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-<meta http-equiv="refresh" content="300">
 <link rel="dns-prefetch" href="https://finviz.com">
 <link rel="dns-prefetch" href="https://charts2.finviz.com">
-<link rel="dns-prefetch" href="https://br.advfn.com">
+<link rel="dns-prefetch" href="https://s3.amazonaws.com">
 <link rel="preconnect" href="https://finviz.com" crossorigin>
-<link rel="preconnect" href="https://br.advfn.com" crossorigin>
+<link rel="preconnect" href="https://s3.amazonaws.com" crossorigin>
 <script>
 (function(a,b,c){var d=a.history,e=document,f=navigator||{},g=localStorage,
 h=encodeURIComponent,i=d.pushState,k=function(){return Math.random().toString(36)},
@@ -30,6 +29,7 @@ trackException:function q(r,s){return n("exception",null,null,null,null,r,s)}}})
 </script>
 </head>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5232270347895348" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://s3.amazonaws.com/tradingview/tv.js"></script>
 <style>
 .parent {display: grid;
 grid-template-columns: repeat(4, 15%) repeat(4, 10%);
@@ -49,102 +49,116 @@ grid-row-gap: 0px;}
 .div11 { grid-area: 3 / 7 / 4 / 9; }
 .div12 { grid-area: 4 / 7 / 5 / 9; }
 </style>
-<script data-cfasync="false">
-function setCookie(cname, cvalue, exdays) {
-  var d = new Date();
-  d.setTime(d.getTime() + (exdays*24*60*60*1000));
-  var expires = "expires="+ d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-function getCookie(cname) {
-  var name = cname + "=";
-  var decodedCookie = decodeURIComponent(document.cookie);
-  var ca = decodedCookie.split(';');
-  for(var i = 0; i <ca.length; i++) {
-    var c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
- function graf1() {
-     var input1 = document.getElementById('input1').value    
-     var img = document.getElementById('image1');
-     img.src = "https://br.advfn.com/p.php?pid=staticchart&s=" + input1 + "&t=23&p=0&dm=2&vol=0&width=465&height=440";
-     setCookie('graf1',input1,1000000);
- }
- function graf2() {
-     var input2 = document.getElementById('input2').value
-	 var img = document.getElementById('image2');
-     img.src = "https://br.advfn.com/p.php?pid=staticchart&s=" + input2 + "&t=23&p=0&dm=2&vol=0&width=465&height=440";
-     setCookie('graf2',input2,1000000);
- }
- function graf3() {
-     var input3 = document.getElementById('input3').value    
-     var img = document.getElementById('image3');
-     img.src = "https://br.advfn.com/p.php?pid=staticchart&s=" + input3 + "&t=23&p=3&dm=2&vol=0&width=465&height=440";
-     setCookie('graf3',input3,1000000);
- }
- function graf4() {
-     var input4 = document.getElementById('input4').value    
-     var img = document.getElementById('image4');
-     img.src = "https://br.advfn.com/p.php?pid=staticchart&s=" + input4 + "&t=23&p=3&dm=2&vol=0&width=465&height=440";
-     setCookie('graf4',input4,1000000);
- }
-</script>
 <body>
 <div class="parent">
 <div id="div1">
-    <input type="text" id="input1" value="" class="form-control"> <span class="input-group-btn">
-        <input type="submit" value="OK" onclick="graf1();" class="btn btn-success"/> WDOV22 5min
-	<img id="image1" src="https://br.advfn.com/p.php?pid=staticchart&s=WDOV22&t=23&p=0&dm=2&vol=0&width=465&height=440"/>
-            </span>
+<script type="text/javascript">
+  new TradingView.widget({
+	"container_id": "div1",
+	"width": "510px",
+	"height": "430px",
+	"symbol": "BMFBOVESPA:WDOV2022",
+	"interval": "5",
+	"timezone": "America/Sao_Paulo",
+	"theme": "light",
+	"style": "2",
+    "locale": "br",
+    "toolbar_bg": "#f1f3f6",
+	"hide_top_toolbar": false,
+	"withdateranges": true,
+    "enable_publishing": false,
+	"save_image": false,
+    "hide_top_toolbar": true,
+	"allow_symbol_change": false,
+	"hideideas": true,
+	"customer": "bovespa",
+	"volume": false,
+  });
+</script>
 </div>
 <div class="div2">
-    <input type="text" id="input2" value="" class="form-control"> <span class="input-group-btn">
-        <input type="submit" value="OK" onclick="graf2();" class="btn btn-success"/> WINV22 5min
-                  <img id="image2" src="https://br.advfn.com/p.php?pid=staticchart&s=WINV22&t=23&p=0&dm=2&vol=0&width=465&height=440"/>
-            </span>
+<script type="text/javascript">
+  new TradingView.widget({
+	"container_id": "div2",
+	"width": "510px",
+	"height": "430px",
+	"symbol": "BMFBOVESPA:WINV2022",
+	"interval": "5",
+	"timezone": "America/Sao_Paulo",
+	"theme": "light",
+	"style": "2",
+    "locale": "br",
+    "toolbar_bg": "#f1f3f6",
+	"hide_top_toolbar": false,
+	"withdateranges": true,
+    "enable_publishing": false,
+	"save_image": false,
+    "hide_top_toolbar": true,
+	"allow_symbol_change": false,
+	"hideideas": true,
+	"customer": "bovespa",
+	"volume": false,
+  });
+</script>
 </div>
 <div class="div3">
-    <input type="text" id="input3" value="" class="form-control"> <span class="input-group-btn">
-        <input type="submit" value="OK" onclick="graf3();" class="btn btn-success"/> WDOV22 Diário
-                  <img id="image3" src="https://br.advfn.com/p.php?pid=staticchart&s=WDOV22&t=23&p=3&dm=2&vol=0&width=465&height=440"/>
-            </span>
+<script type="text/javascript">
+  new TradingView.widget({
+	"container_id": "div3",
+	"width": "510px",
+	"height": "430px",
+	"symbol": "BMFBOVESPA:WDOV2022",
+	"interval": "D",
+	"timezone": "America/Sao_Paulo",
+	"theme": "light",
+	"style": "2",
+    "locale": "br",
+    "toolbar_bg": "#f1f3f6",
+	"hide_top_toolbar": false,
+	"withdateranges": true,
+    "enable_publishing": false,
+	"save_image": false,
+    "hide_top_toolbar": true,
+	"allow_symbol_change": false,
+	"hideideas": true,
+	"customer": "bovespa",
+	"volume": false,
+  });
+</script>
 </div>
 <div class="div4">
-    <input type="text" id="input4" value="" class="form-control"> <span class="input-group-btn">
-        <input type="submit" value="OK" onclick="graf4();" class="btn btn-success"/> WINV22 Diário
-                  <img id="image4" src="https://br.advfn.com/p.php?pid=staticchart&s=WINV22&t=23&p=3&dm=2&vol=0&width=465&height=440"/>
-            </span>
+<script type="text/javascript">
+  new TradingView.widget({
+	"container_id": "div4",
+	"width": "510px",
+	"height": "430px",
+	"symbol": "BMFBOVESPA:WINV2022",
+	"interval": "D",
+	"timezone": "America/Sao_Paulo",
+	"theme": "light",
+	"style": "2",
+    "locale": "br",
+    "toolbar_bg": "#f1f3f6",
+	"hide_top_toolbar": false,
+	"withdateranges": true,
+    "enable_publishing": false,
+	"save_image": false,
+    "hide_top_toolbar": true,
+	"allow_symbol_change": false,
+	"hideideas": true,
+	"customer": "bovespa",
+	"volume": false,
+  });
+</script>
 </div>
-<div class="div5"><img id="image5" src="https://finviz.com/fut_image.ashx?es_m5_s.png"/>
-</div>
-<div class="div6">
-                  <img id="image6" src="https://finviz.com/fut_image.ashx?es_d1_s.png"/>
-</div>
-<div class="div7">
-                  <img id="image7" src="https://finviz.com/fut_image.ashx?nq_m5_s.png"/>
-</div>
-<div class="div8">
-                  <img id="image8" src="https://finviz.com/fut_image.ashx?nq_d1_s.png"/>
-</div>
-<div class="div9">
-                  <img id="image9" src="https://finviz.com/fut_image.ashx?vx_d1_s.png"/>
-</div>
-<div class="div10">
-                  <img id="image10" src="https://finviz.com/fut_image.ashx?gc_d1_s.png"/>
-</div>
-<div class="div11">
-                  <img id="image11" src="https://finviz.com/fut_image.ashx?qa_d1_s.png"/>
-</div>
-<div class="div12">
-                  <img id="image12" src="https://finviz.com/fut_image.ashx?zn_d1_s.png"/>
-</div>
+<div class="div5"><img id="image5" src="https://finviz.com/fut_image.ashx?es_m5_s.png"/></div>
+<div class="div6"><img id="image6" src="https://finviz.com/fut_image.ashx?es_d1_s.png"/></div>
+<div class="div7"><img id="image7" src="https://finviz.com/fut_image.ashx?nq_m5_s.png"/></div>
+<div class="div8"><img id="image8" src="https://finviz.com/fut_image.ashx?nq_d1_s.png"/></div>
+<div class="div9"><img id="image9" src="https://finviz.com/fut_image.ashx?vx_d1_s.png"/></div>
+<div class="div10"><img id="image10" src="https://finviz.com/fut_image.ashx?gc_d1_s.png"/></div>
+<div class="div11"><img id="image11" src="https://finviz.com/fut_image.ashx?qa_d1_s.png"/></div>
+<div class="div12"><img id="image12" src="https://finviz.com/fut_image.ashx?zn_d1_s.png"/></div>
 </div>
 </body>
 </html>
