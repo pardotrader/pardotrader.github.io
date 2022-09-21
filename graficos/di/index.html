@@ -33,7 +33,6 @@
 	"allow_symbol_change": false,
 	"hideideas": true,
 	"customer": "bovespa",
-	"volume": false,
   });
 </script>
 </div>
@@ -58,7 +57,6 @@
 	"allow_symbol_change": false,
 	"hideideas": true,
 	"customer": "bovespa",
-	"volume": false,
   });
 </script>
 </div>
@@ -83,7 +81,6 @@
 	"allow_symbol_change": false,
 	"hideideas": true,
 	"customer": "bovespa",
-	"volume": false,
   });
 </script>
 </div>
@@ -108,7 +105,6 @@
 	"allow_symbol_change": false,
 	"hideideas": true,
 	"customer": "bovespa",
-	"volume": false,
   });
 </script>
 </div>
@@ -133,7 +129,6 @@
 	"allow_symbol_change": false,
 	"hideideas": true,
 	"customer": "bovespa",
-	"volume": false,
   });
 </script>
 </div>
@@ -158,7 +153,6 @@
 	"allow_symbol_change": false,
 	"hideideas": true,
 	"customer": "bovespa",
-	"volume": false,
   });
 </script>
 </div>
@@ -183,7 +177,6 @@
 	"allow_symbol_change": false,
 	"hideideas": true,
 	"customer": "bovespa",
-	"volume": false,
   });
 </script>
 	</div>
@@ -209,72 +202,8 @@
 	"allow_symbol_change": false,
 	"hideideas": true,
 	"customer": "bovespa",
-	"volume": false,
   });
 </script>
 </div>
-<script data-cfasync="false">
-function setCookie(cname, cvalue, exdays) {
-  var d = new Date();
-  d.setTime(d.getTime() + (exdays*24*60*60*1000));
-  var expires = "expires="+ d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-function getCookie(cname) {
-  var name = cname + "=";
-  var decodedCookie = decodeURIComponent(document.cookie);
-  var ca = decodedCookie.split(';');
-  for(var i = 0; i <ca.length; i++) {
-    var c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
- function graf1() {
-	var input1 = document.getElementById('input1').value
-    var img = document.getElementById('image1').src = "https://br.advfn.com/p.php?pid=staticchart&s=" + input1 + "&t=23&p=3&dm=2&vol=0&width=470&height=450";
-     setCookie('graf1',input1,1000000);
- }
- function graf2() {
-    var input2 = document.getElementById('input2').value
-	var img = document.getElementById('image2').src = "https://br.advfn.com/p.php?pid=staticchart&s=" + input2 + "&t=23&p=3&dm=2&vol=0&width=470&height=450";
-     setCookie('graf2',input2,1000000);
- }
- function graf3() {
-    var input3 = document.getElementById('input3').value    
-     var img = document.getElementById('image3').src = "https://br.advfn.com/p.php?pid=staticchart&s=" + input3 + "&t=23&p=3&dm=2&vol=0&width=470&height=450";
-     setCookie('graf3',input3,1000000);
- }
- function graf4() {
-    var input4 = document.getElementById('input4').value    
-     var img = document.getElementById('image4').src = "https://br.advfn.com/p.php?pid=staticchart&s=" + input4 + "&t=23&p=3&dm=2&vol=0&width=470&height=450";
-     setCookie('graf4',input4,1000000);
- }
-  function graf5() {
-    var input5 = document.getElementById('input5').value    
-     var img = document.getElementById('image5').src = "https://br.advfn.com/p.php?pid=staticchart&s=" + input5 + "&t=23&p=3&dm=2&vol=0&width=470&height=450";
-     setCookie('graf5',input5,1000000);
- }
- function graf6() {
-    var input6 = document.getElementById('input6').value
-	var img = document.getElementById('image6').src = "https://br.advfn.com/p.php?pid=staticchart&s=" + input6 + "&t=23&p=3&dm=2&vol=0&width=470&height=450";
-     setCookie('graf6',input6,1000000);
- }
- function graf7() {
-    var input7 = document.getElementById('input7').value    
-     var img = document.getElementById('image7').src = "https://br.advfn.com/p.php?pid=staticchart&s=" + input7 + "&t=23&p=3&dm=2&vol=0&width=470&height=450";
-     setCookie('graf7',input7,1000000);
- }
- function graf8() {
-    var input8 = document.getElementById('input8').value    
-     var img = document.getElementById('image8').src = "https://br.advfn.com/p.php?pid=staticchart&s=" + input8 + "&t=23&p=3&dm=2&vol=0&width=470&height=450";
-     setCookie('graf8',input8,1000000);
- }
-</script>
 </body>
 </html>
