@@ -1,100 +1,99 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Gráfico Ações</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-<link rel="preconnect" href="https://res.cloudinary.com" crossorigin>
-<link rel="dns-prefetch" href="https://res.cloudinary.com">
-  <script>
-(function(a,b,c){var d=a.history,e=document,f=navigator||{},g=localStorage,
-h=encodeURIComponent,i=d.pushState,k=function(){return Math.random().toString(36)},
-l=function(){return g.cid||(g.cid=k()),g.cid},m=function(r){var s=[];for(var t in r)
-r.hasOwnProperty(t)&&void 0!==r[t]&&s.push(h(t)+"="+h(r[t]));return s.join("&")},
-n=function(r,s,t,u,v,w,x){var z="https://www.google-analytics.com/collect",
-A=m({v:"1",ds:"web",aip:c.anonymizeIp?1:void 0,tid:b,cid:l(),t:r||"pageview",
-sd:c.colorDepth&&screen.colorDepth?screen.colorDepth+"-bits":void 0,dr:e.referrer||
-void 0,dt:e.title,dl:e.location.origin+e.location.pathname+e.location.search,ul:c.language?
-(f.language||"").toLowerCase():void 0,de:c.characterSet?e.characterSet:void 0,
-sr:c.screenSize?(a.screen||{}).width+"x"+(a.screen||{}).height:void 0,vp:c.screenSize&&
-a.visualViewport?(a.visualViewport||{}).width+"x"+(a.visualViewport||{}).height:void 0,
-ec:s||void 0,ea:t||void 0,el:u||void 0,ev:v||void 0,exd:w||void 0,exf:"undefined"!=typeof x&&
-!1==!!x?0:void 0});if(f.sendBeacon)f.sendBeacon(z,A);else{var y=new XMLHttpRequest;
-y.open("POST",z,!0),y.send(A)}};d.pushState=function(r){return"function"==typeof d.onpushstate&&
-d.onpushstate({state:r}),setTimeout(n,c.delay||10),i.apply(d,arguments)},n(),
-a.ma={trackEvent:function o(r,s,t,u){return n("event",r,s,t,u)},
-trackException:function q(r,s){return n("exception",null,null,null,null,r,s)}}})
-(window,"UA-24234789-14",{anonymizeIp:false,siteSpeedSampleRate: 90,colorDepth:true,characterSet:true,screenSize:true,language:true})
-</script>
-</head>
-<style>
-* {  box-sizing: border-box;}
-body {  margin: 0;  font-family: Arial;}
-.header {  text-align: center;  padding: 32px;}
-.row {  display: -ms-flexbox; /* IE10 */  display: flex;  -ms-flex-wrap: wrap; /* IE10 */  flex-wrap: wrap;  padding: 0 20px;}
-/* Create four equal columns that sits next to each other */
-.column {  -ms-flex: 32%; /* IE10 */  flex: 32%;  max-width: 32%;  padding: 0 20px;}
-.column img {  margin-top: 8px;  vertical-align: middle;  width: 100%;}
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {  
-.column {    -ms-flex: 50%;    flex: 50%;    max-width: 50%;  }}
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {    -ms-flex: 100%;    flex: 100%;    max-width: 100%;  }}
-</style>
-<body>
-  <a href="https://pardotrader.github.io/">Voltar</a>
-<!-- Photo Grid -->
-<h1>Gráficos por seguimentos de ações</h1>
-<div class="row"> 
-  <div class="column">     
-    <a href="https://pardotrader.github.io/graficos/indices/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/indices.jpg" style="width:100%">Indices</a>
-    <a href="https://pardotrader.github.io/graficos/dolar/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/dolar.jpg" style="width:100%">Dólar</a>
-    <a href="https://pardotrader.github.io/graficos/di/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/di.jpg" style="width:100%">DI</a>
-    <a href="https://pardotrader.github.io/graficos/etf/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/etf.jpg" style="width:100%">ETFs</a>
-    <a href="https://pardotrader.github.io/graficos/fixa/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/fixa.jpg" style="width:100%">Fixa</a>
-    <a href="https://pardotrader.github.io/graficos/fip/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/fip.jpg" style="width:100%">FIP</a>
-  </div>
-  <div class="column">
-    <a href="https://pardotrader.github.io/graficos/shopping/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/shopping.jpg" style="width:100%">Shopping</a>
-    <a href="https://pardotrader.github.io/graficos/varejo/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/varejo.jpg" style="width:100%">Varejo</a>
-    <a href="https://pardotrader.github.io/graficos/contrutoras/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/construtoras.jpg" style="width:100%">Contrutoras</a>
-    <a href="https://pardotrader.github.io/graficos/eletricas/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/eletricas.jpg" style="width:100%">Eletricas</a>
-    <a href="https://pardotrader.github.io/graficos/bancos/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/bancos.jpg" style="width:100%">Bancos</a>
-  </div>  
-  <div class="column">
-    <a href="https://pardotrader.github.io/graficos/adr/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/adr.jpg" style="width:100%">ADR</a>
-    <a href="https://pardotrader.github.io/graficos/adrs/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/adrs.jpg" style="width:100%">ADRs</a>
-    <a href="https://pardotrader.github.io/graficos/acoes/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/acoes.jpg" style="width:100%">Ações</a>
-    <a href="https://pardotrader.github.io/graficos/fiis/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/fiis.jpg" style="width:100%">Fiis</a>
-    <a href="https://pardotrader.github.io/graficos/futuros/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/futuros.jpg" style="width:100%">Futuros</a>
-  </div>
-</div>
-<h2>Lista com todos seguimentos de Ações, Fiis e Futuros</h2>
-<ul>
-<li><a href="https://pardotrader.github.io/graficos/fii-shop/">fii-shop</a></li>
-<li><a href="https://pardotrader.github.io/graficos/fii-lage/">fii-lage</a></li>
-<li><a href="https://pardotrader.github.io/graficos/fii-log/">fii-log</a></li>
-<li><a href="https://pardotrader.github.io/graficos/fii-cri/">fii-cri</a></li>
-<li><a href="https://pardotrader.github.io/graficos/fii-fof/">fii-fof</a></li>
-<li><a href="https://pardotrader.github.io/graficos/indices/">Indices</a></li>
-<li><a href="https://pardotrader.github.io/graficos/dolar/">Dólar</a></li>
-<li><a href="https://pardotrader.github.io/graficos/di/">DI</a></li>
-<li><a href="https://pardotrader.github.io/graficos/etf/">ETFs</a></li>
-<li><a href="https://pardotrader.github.io/graficos/fixa/">Fixa</a></li>
-<li><a href="https://pardotrader.github.io/graficos/fip/">FIP</a></li>
-<li><a href="https://pardotrader.github.io/graficos/shopping/">Shopping</a></li>
-<li><a href="https://pardotrader.github.io/graficos/varejo/">Varejo</a></li>
-<li><a href="https://pardotrader.github.io/graficos/contrutoras/">Contrutoras</a></li>
-<li><a href="https://pardotrader.github.io/graficos/eletricas/">Eletricas</a></li>
-<li><a href="https://pardotrader.github.io/graficos/bancos/">Bancos</a></li>
-<li><a href="https://pardotrader.github.io/graficos/adr/">ADR</a></li>
-<li><a href="https://pardotrader.github.io/graficos/adrs/">ADRs</a></li>
-<li><a href="https://pardotrader.github.io/graficos/futuros/">Futuros</a></li>
-<li><a href="https://pardotrader.github.io/graficos/fips-fidc/">Fips + FIDC</a></li>
-<li><a href="https://pardotrader.github.io/graficos/fiagro/">Fiagro</a></li>
-<li><a href="https://pardotrader.github.io/graficos/fi-infra/">Fi-Infra</a></li>
-<li><a href="https://pardotrader.github.io/graficos/reits/">REITs</a></li>
-</ul>
-</body>
+	<head>
+		<title>Gráfico Ações</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+		<link rel="dns-prefetch" href="https://res.cloudinary.com">
+		<script>
+			(function(a,b,c){var d=a.history,e=document,f=navigator||{},g=localStorage,
+				h=encodeURIComponent,i=d.pushState,k=function(){return Math.random().toString(36)},
+				l=function(){return g.cid||(g.cid=k()),g.cid},m=function(r){var s=[];for(var t in r)
+				r.hasOwnProperty(t)&&void 0!==r[t]&&s.push(h(t)+"="+h(r[t]));return s.join("&")},
+				n=function(r,s,t,u,v,w,x){var z="https://www.google-analytics.com/collect",
+					A=m({v:"1",ds:"web",aip:c.anonymizeIp?1:void 0,tid:b,cid:l(),t:r||"pageview",
+						sd:c.colorDepth&&screen.colorDepth?screen.colorDepth+"-bits":void 0,dr:e.referrer||
+						void 0,dt:e.title,dl:e.location.origin+e.location.pathname+e.location.search,ul:c.language?
+						(f.language||"").toLowerCase():void 0,de:c.characterSet?e.characterSet:void 0,
+						sr:c.screenSize?(a.screen||{}).width+"x"+(a.screen||{}).height:void 0,vp:c.screenSize&&
+						a.visualViewport?(a.visualViewport||{}).width+"x"+(a.visualViewport||{}).height:void 0,
+						ec:s||void 0,ea:t||void 0,el:u||void 0,ev:v||void 0,exd:w||void 0,exf:"undefined"!=typeof x&&
+						!1==!!x?0:void 0});if(f.sendBeacon)f.sendBeacon(z,A);else{var y=new XMLHttpRequest;
+					y.open("POST",z,!0),y.send(A)}};d.pushState=function(r){return"function"==typeof d.onpushstate&&
+				d.onpushstate({state:r}),setTimeout(n,c.delay||10),i.apply(d,arguments)},n(),
+				a.ma={trackEvent:function o(r,s,t,u){return n("event",r,s,t,u)},
+				trackException:function q(r,s){return n("exception",null,null,null,null,r,s)}}})
+				(window,"UA-24234789-14",{anonymizeIp:false,siteSpeedSampleRate: 90,colorDepth:true,characterSet:true,screenSize:true,language:true})
+		</script>
+	</head>
+	<style>
+		* {  box-sizing: border-box;}
+		body {  margin: 0;  font-family: Arial;}
+		.header {  text-align: center;  padding: 32px;}
+		.row {  display: -ms-flexbox; /* IE10 */  display: flex;  -ms-flex-wrap: wrap; /* IE10 */  flex-wrap: wrap;  padding: 0 20px;}
+		/* Create four equal columns that sits next to each other */
+		.column {  -ms-flex: 32%; /* IE10 */  flex: 32%;  max-width: 32%;  padding: 0 20px;}
+		.column img {  margin-top: 8px;  vertical-align: middle;  width: 100%;}
+		/* Responsive layout - makes a two column-layout instead of four columns */
+		@media screen and (max-width: 800px) {  
+		.column {    -ms-flex: 50%;    flex: 50%;    max-width: 50%;  }}
+		/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 600px) {
+		.column {    -ms-flex: 100%;    flex: 100%;    max-width: 100%;  }}
+	</style>
+	<body>
+		<a href="https://pardotrader.github.io/">Voltar</a>
+		<!-- Photo Grid -->
+		<h1>Gráficos por seguimentos de ações</h1>
+		<div class="row"> 
+			<div class="column">     
+				<a href="https://pardotrader.github.io/graficos/indices/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/indices.jpg" style="width:100%">Indices</a>
+				<a href="https://pardotrader.github.io/graficos/dolar/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/dolar.jpg" style="width:100%">Dólar</a>
+				<a href="https://pardotrader.github.io/graficos/di/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/di.jpg" style="width:100%">DI</a>
+				<a href="https://pardotrader.github.io/graficos/etf/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/etf.jpg" style="width:100%">ETFs</a>
+				<a href="https://pardotrader.github.io/graficos/fixa/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/fixa.jpg" style="width:100%">Fixa</a>
+				<a href="https://pardotrader.github.io/graficos/fip/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/fip.jpg" style="width:100%">FIP</a>
+			</div>
+			<div class="column">
+				<a href="https://pardotrader.github.io/graficos/shopping/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/shopping.jpg" style="width:100%">Shopping</a>
+				<a href="https://pardotrader.github.io/graficos/varejo/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/varejo.jpg" style="width:100%">Varejo</a>
+				<a href="https://pardotrader.github.io/graficos/contrutoras/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/construtoras.jpg" style="width:100%">Contrutoras</a>
+				<a href="https://pardotrader.github.io/graficos/eletricas/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/eletricas.jpg" style="width:100%">Eletricas</a>
+				<a href="https://pardotrader.github.io/graficos/bancos/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/bancos.jpg" style="width:100%">Bancos</a>
+			</div>  
+			<div class="column">
+				<a href="https://pardotrader.github.io/graficos/adr/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/adr.jpg" style="width:100%">ADR</a>
+				<a href="https://pardotrader.github.io/graficos/adrs/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/adrs.jpg" style="width:100%">ADRs</a>
+				<a href="https://pardotrader.github.io/graficos/acoes/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/acoes.jpg" style="width:100%">Ações</a>
+				<a href="https://pardotrader.github.io/graficos/fiis/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/fiis.jpg" style="width:100%">Fiis</a>
+				<a href="https://pardotrader.github.io/graficos/futuros/"><img src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/futuros.jpg" style="width:100%">Futuros</a>
+			</div>
+		</div>
+		<h2>Lista com todos seguimentos de Ações, Fiis e Futuros</h2>
+		<ul>
+			<li><a href="https://pardotrader.github.io/graficos/fii-shop/">fii-shop</a></li>
+			<li><a href="https://pardotrader.github.io/graficos/fii-lage/">fii-lage</a></li>
+			<li><a href="https://pardotrader.github.io/graficos/fii-log/">fii-log</a></li>
+			<li><a href="https://pardotrader.github.io/graficos/fii-cri/">fii-cri</a></li>
+			<li><a href="https://pardotrader.github.io/graficos/fii-fof/">fii-fof</a></li>
+			<li><a href="https://pardotrader.github.io/graficos/indices/">Indices</a></li>
+			<li><a href="https://pardotrader.github.io/graficos/dolar/">Dólar</a></li>
+			<li><a href="https://pardotrader.github.io/graficos/di/">DI</a></li>
+			<li><a href="https://pardotrader.github.io/graficos/etf/">ETFs</a></li>
+			<li><a href="https://pardotrader.github.io/graficos/fixa/">Fixa</a></li>
+			<li><a href="https://pardotrader.github.io/graficos/fip/">FIP</a></li>
+			<li><a href="https://pardotrader.github.io/graficos/shopping/">Shopping</a></li>
+			<li><a href="https://pardotrader.github.io/graficos/varejo/">Varejo</a></li>
+			<li><a href="https://pardotrader.github.io/graficos/contrutoras/">Contrutoras</a></li>
+			<li><a href="https://pardotrader.github.io/graficos/eletricas/">Eletricas</a></li>
+			<li><a href="https://pardotrader.github.io/graficos/bancos/">Bancos</a></li>
+			<li><a href="https://pardotrader.github.io/graficos/adr/">ADR</a></li>
+			<li><a href="https://pardotrader.github.io/graficos/adrs/">ADRs</a></li>
+			<li><a href="https://pardotrader.github.io/graficos/futuros/">Futuros</a></li>
+			<li><a href="https://pardotrader.github.io/graficos/fips-fidc/">Fips + FIDC</a></li>
+			<li><a href="https://pardotrader.github.io/graficos/fiagro/">Fiagro</a></li>
+			<li><a href="https://pardotrader.github.io/graficos/fi-infra/">Fi-Infra</a></li>
+			<li><a href="https://pardotrader.github.io/graficos/reits/">REITs</a></li>
+		</ul>
+	</body>
 </html>

@@ -1,312 +1,313 @@
 <html>
-<head>
-<title>FI-Infra - Gráfico de todos os fundos</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-<link rel="dns-prefetch" href="https://s3.amazonaws.com">
-<link rel="preconnect" href="https://s3.amazonaws.com" crossorigin>
-<link rel="preconnect" href="https://static.tradingview.com" crossorigin>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5232270347895348" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://s3.amazonaws.com/tradingview/tv.js" async></script>
-<script>
-(function(a,b,c){var d=a.history,e=document,f=navigator||{},g=localStorage,
-h=encodeURIComponent,i=d.pushState,k=function(){return Math.random().toString(36)},
-l=function(){return g.cid||(g.cid=k()),g.cid},m=function(r){var s=[];for(var t in r)
-r.hasOwnProperty(t)&&void 0!==r[t]&&s.push(h(t)+"="+h(r[t]));return s.join("&")},
-n=function(r,s,t,u,v,w,x){var z="https://www.google-analytics.com/collect",
-A=m({v:"1",ds:"web",aip:c.anonymizeIp?1:void 0,tid:b,cid:l(),t:r||"pageview",
-sd:c.colorDepth&&screen.colorDepth?screen.colorDepth+"-bits":void 0,dr:e.referrer||
-void 0,dt:e.title,dl:e.location.origin+e.location.pathname+e.location.search,ul:c.language?
-(f.language||"").toLowerCase():void 0,de:c.characterSet?e.characterSet:void 0,
-sr:c.screenSize?(a.screen||{}).width+"x"+(a.screen||{}).height:void 0,vp:c.screenSize&&
-a.visualViewport?(a.visualViewport||{}).width+"x"+(a.visualViewport||{}).height:void 0,
-ec:s||void 0,ea:t||void 0,el:u||void 0,ev:v||void 0,exd:w||void 0,exf:"undefined"!=typeof x&&
-!1==!!x?0:void 0});if(f.sendBeacon)f.sendBeacon(z,A);else{var y=new XMLHttpRequest;
-y.open("POST",z,!0),y.send(A)}};d.pushState=function(r){return"function"==typeof d.onpushstate&&
-d.onpushstate({state:r}),setTimeout(n,c.delay||10),i.apply(d,arguments)},n(),
-a.ma={trackEvent:function o(r,s,t,u){return n("event",r,s,t,u)},
-trackException:function q(r,s){return n("exception",null,null,null,null,r,s)}}})
-(window,"UA-24234789-14",{anonymizeIp:false,siteSpeedSampleRate: 90,colorDepth:true,characterSet:true,screenSize:true,language:true})
-</script>
-<style>
-body {margin:0;}
-.main{margin-top:50px;}
-.tradingview-widget-container {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 9999}
-</style>
-</head>
-<body>
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-  {
-  "symbols": [
-    {
-      "description": "",
-      "proName": "BMFBOVESPA:CPTI11"
-    },
-    {
-      "description": "",
-      "proName": "BMFBOVESPA:BIDB11"
-    },
-    {
-      "description": "",
-      "proName": "BMFBOVESPA:BODB11"
-    },
-    {
-      "description": "",
-      "proName": "BMFBOVESPA:JURO11"
-    },
-    {
-      "description": "",
-      "proName": "BMFBOVESPA:RBIF11"
-    },
-    {
-      "description": "",
-      "proName": "BMFBOVESPA:IFRA11"
-    },
-    {
-      "description": "",
-      "proName": "BMFBOVESPA:KDIF11"
-    },
-    {
-      "description": "",
-      "proName": "BMFBOVESPA:BDIF11"
-    },
-    {
-      "description": "",
-      "proName": "BMFBOVESPA:XPID11"
-    }
-  ],
-  "showSymbolLogo": true,
-  "colorTheme": "light",
-  "isTransparent": false,
-  "displayMode": "adaptive",
-  "locale": "br",
-"customer": "bovespa"
-}
-  </script>
-</div>
-<div class="main">
-<div class="div1" style='text-align: center;'>CPTI11
-<script type="text/javascript">
-  new TradingView.widget({
-	"container_id": "div1",
-	"width": "70%",
-	"height": "430px",
-	"symbol": "BMFBOVESPA:CPTI11",
-	"interval": "D",
-	"timezone": "America/Sao_Paulo",
-	"theme": "light",
-	"style": "2",
-    "locale": "br",
-    "toolbar_bg": "#f1f3f6",
-	"hide_top_toolbar": false,
-	"withdateranges": true,
-    "enable_publishing": false,
-	"save_image": false,
-    "hide_top_toolbar": true,
-	"allow_symbol_change": false,
-	"hideideas": true,
-	"customer": "bovespa",
-  });
-</script>
-</div>
-<div class="div2" style='text-align: center;'>BIDB11
-<script type="text/javascript">
-  new TradingView.widget({
-	"container_id": "div2",
-	"width": "70%",
-	"height": "430px",
-	"symbol": "BMFBOVESPA:BIDB11",
-	"interval": "D",
-	"timezone": "America/Sao_Paulo",
-	"theme": "light",
-	"style": "2",
-    "locale": "br",
-    "toolbar_bg": "#f1f3f6",
-	"hide_top_toolbar": false,
-	"withdateranges": true,
-    "enable_publishing": false,
-	"save_image": false,
-    "hide_top_toolbar": true,
-	"allow_symbol_change": false,
-	"hideideas": true,
-	"customer": "bovespa",
-  });
-</script>
-</div>
-<div class="div3" style='text-align: center;'>BODB11
-<script type="text/javascript">
-  new TradingView.widget({
-	"container_id": "div3",
-	"width": "70%",
-	"height": "430px",
-	"symbol": "BMFBOVESPA:BODB11",
-	"interval": "D",
-	"timezone": "America/Sao_Paulo",
-	"theme": "light",
-	"style": "2",
-    "locale": "br",
-    "toolbar_bg": "#f1f3f6",
-	"hide_top_toolbar": false,
-	"withdateranges": true,
-    "enable_publishing": false,
-	"save_image": false,
-    "hide_top_toolbar": true,
-	"allow_symbol_change": false,
-	"hideideas": true,
-	"customer": "bovespa",
-  });
-</script>
-</div>
-<div class="div4" style='text-align: center;'>JURO11
-<script type="text/javascript">
-  new TradingView.widget({
-	"container_id": "div4",
-	"width": "70%",
-	"height": "430px",
-	"symbol": "BMFBOVESPA:JURO11",
-	"interval": "D",
-	"timezone": "America/Sao_Paulo",
-	"theme": "light",
-	"style": "2",
-    "locale": "br",
-    "toolbar_bg": "#f1f3f6",
-	"hide_top_toolbar": false,
-	"withdateranges": true,
-    "enable_publishing": false,
-	"save_image": false,
-    "hide_top_toolbar": true,
-	"allow_symbol_change": false,
-	"hideideas": true,
-	"customer": "bovespa",
-  });
-</script>
-</div>
-<div class="div5" style='text-align: center;'>RBIF11
-<script type="text/javascript">
-  new TradingView.widget({
-	"container_id": "div5",
-	"width": "70%",
-	"height": "430px",
-	"symbol": "BMFBOVESPA:RBIF11",
-	"interval": "D",
-	"timezone": "America/Sao_Paulo",
-	"theme": "light",
-	"style": "2",
-    "locale": "br",
-    "toolbar_bg": "#f1f3f6",
-	"hide_top_toolbar": false,
-	"withdateranges": true,
-    "enable_publishing": false,
-	"save_image": false,
-    "hide_top_toolbar": true,
-	"allow_symbol_change": false,
-	"hideideas": true,
-	"customer": "bovespa",
-  });
-</script>
-</div>
-<div class="div6" style='text-align: center;'>IFRA11
-<script type="text/javascript">
-  new TradingView.widget({
-	"container_id": "div6",
-	"width": "70%",
-	"height": "430px",
-	"symbol": "BMFBOVESPA:IFRA11",
-	"interval": "D",
-	"timezone": "America/Sao_Paulo",
-	"theme": "light",
-	"style": "2",
-    "locale": "br",
-    "toolbar_bg": "#f1f3f6",
-	"hide_top_toolbar": false,
-	"withdateranges": true,
-    "enable_publishing": false,
-	"save_image": false,
-    "hide_top_toolbar": true,
-	"allow_symbol_change": false,
-	"hideideas": true,
-	"customer": "bovespa",
-  });
-</script>
-</div>
-<div class="div7" style='text-align: center;'>KDIF11
-<script type="text/javascript">
-  new TradingView.widget({
-	"container_id": "div7",
-	"width": "70%",
-	"height": "430px",
-	"symbol": "BMFBOVESPA:KDIF11",
-	"interval": "D",
-	"timezone": "America/Sao_Paulo",
-	"theme": "light",
-	"style": "2",
-    "locale": "br",
-    "toolbar_bg": "#f1f3f6",
-	"hide_top_toolbar": false,
-	"withdateranges": true,
-    "enable_publishing": false,
-	"save_image": false,
-    "hide_top_toolbar": true,
-	"allow_symbol_change": false,
-	"hideideas": true,
-	"customer": "bovespa",
-  });
-</script>
-</div>
-<div class="div8" style='text-align: center;'>BDIF11
-<script type="text/javascript">
-  new TradingView.widget({
-	"container_id": "div8",
-	"width": "70%",
-	"height": "430px",
-	"symbol": "BMFBOVESPA:BDIF11",
-	"interval": "D",
-	"timezone": "America/Sao_Paulo",
-	"theme": "light",
-	"style": "2",
-    "locale": "br",
-    "toolbar_bg": "#f1f3f6",
-	"hide_top_toolbar": false,
-	"withdateranges": true,
-    "enable_publishing": false,
-	"save_image": false,
-    "hide_top_toolbar": true,
-	"allow_symbol_change": false,
-	"hideideas": true,
-	"customer": "bovespa",
-  });
-</script>
-</div>
-<div class="div9" style='text-align: center;'>XPID11
-<script type="text/javascript">
-  new TradingView.widget({
-	"container_id": "div9",
-	"width": "70%",
-	"height": "430px",
-	"symbol": "BMFBOVESPA:XPID11",
-	"interval": "D",
-	"timezone": "America/Sao_Paulo",
-	"theme": "light",
-	"style": "2",
-    "locale": "br",
-    "toolbar_bg": "#f1f3f6",
-	"hide_top_toolbar": false,
-	"withdateranges": true,
-    "enable_publishing": false,
-	"save_image": false,
-    "hide_top_toolbar": true,
-	"allow_symbol_change": false,
-	"hideideas": true,
-	"customer": "bovespa",
-  });
-</script>
-</div>
-</div>
-</body>
-</html>
+	<head>
+		<title>FI-Infra - Gráfico de todos os fundos</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+		<link rel="dns-prefetch" href="https://s3.amazonaws.com">
+		<link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+		<link rel="preconnect" href="https://s3.amazonaws.com" crossorigin>
+		<link rel="preconnect" href="https://static.tradingview.com" crossorigin>
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5232270347895348" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://s3.amazonaws.com/tradingview/tv.js" async></script>
+		<script>
+			(function(a,b,c){var d=a.history,e=document,f=navigator||{},g=localStorage,
+				h=encodeURIComponent,i=d.pushState,k=function(){return Math.random().toString(36)},
+				l=function(){return g.cid||(g.cid=k()),g.cid},m=function(r){var s=[];for(var t in r)
+				r.hasOwnProperty(t)&&void 0!==r[t]&&s.push(h(t)+"="+h(r[t]));return s.join("&")},
+				n=function(r,s,t,u,v,w,x){var z="https://www.google-analytics.com/collect",
+					A=m({v:"1",ds:"web",aip:c.anonymizeIp?1:void 0,tid:b,cid:l(),t:r||"pageview",
+						sd:c.colorDepth&&screen.colorDepth?screen.colorDepth+"-bits":void 0,dr:e.referrer||
+						void 0,dt:e.title,dl:e.location.origin+e.location.pathname+e.location.search,ul:c.language?
+						(f.language||"").toLowerCase():void 0,de:c.characterSet?e.characterSet:void 0,
+						sr:c.screenSize?(a.screen||{}).width+"x"+(a.screen||{}).height:void 0,vp:c.screenSize&&
+						a.visualViewport?(a.visualViewport||{}).width+"x"+(a.visualViewport||{}).height:void 0,
+						ec:s||void 0,ea:t||void 0,el:u||void 0,ev:v||void 0,exd:w||void 0,exf:"undefined"!=typeof x&&
+						!1==!!x?0:void 0});if(f.sendBeacon)f.sendBeacon(z,A);else{var y=new XMLHttpRequest;
+					y.open("POST",z,!0),y.send(A)}};d.pushState=function(r){return"function"==typeof d.onpushstate&&
+				d.onpushstate({state:r}),setTimeout(n,c.delay||10),i.apply(d,arguments)},n(),
+				a.ma={trackEvent:function o(r,s,t,u){return n("event",r,s,t,u)},
+				trackException:function q(r,s){return n("exception",null,null,null,null,r,s)}}})
+				(window,"UA-24234789-14",{anonymizeIp:false,siteSpeedSampleRate: 90,colorDepth:true,characterSet:true,screenSize:true,language:true})
+		</script>
+		<style>
+			body {margin:0;}
+			.main{margin-top:50px;}
+			.tradingview-widget-container {
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 9999}
+		</style>
+	</head>
+	<body>
+		<div class="tradingview-widget-container">
+			<div class="tradingview-widget-container__widget"></div>
+			<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+				{
+					"symbols": [
+					{
+						"description": "",
+						"proName": "BMFBOVESPA:CPTI11"
+					},
+					{
+						"description": "",
+						"proName": "BMFBOVESPA:BIDB11"
+					},
+					{
+						"description": "",
+						"proName": "BMFBOVESPA:BODB11"
+					},
+					{
+						"description": "",
+						"proName": "BMFBOVESPA:JURO11"
+					},
+					{
+						"description": "",
+						"proName": "BMFBOVESPA:RBIF11"
+					},
+					{
+						"description": "",
+						"proName": "BMFBOVESPA:IFRA11"
+					},
+					{
+						"description": "",
+						"proName": "BMFBOVESPA:KDIF11"
+					},
+					{
+						"description": "",
+						"proName": "BMFBOVESPA:BDIF11"
+					},
+					{
+						"description": "",
+						"proName": "BMFBOVESPA:XPID11"
+					}
+					],
+					"showSymbolLogo": true,
+					"colorTheme": "light",
+					"isTransparent": false,
+					"displayMode": "adaptive",
+					"locale": "br",
+					"customer": "bovespa"
+				}
+			</script>
+		</div>
+		<div class="main">
+			<div class="div1" style='text-align: center;'>CPTI11
+				<script type="text/javascript">
+					new TradingView.widget({
+						"container_id": "div1",
+						"width": "70%",
+						"height": "430px",
+						"symbol": "BMFBOVESPA:CPTI11",
+						"interval": "D",
+						"timezone": "America/Sao_Paulo",
+						"theme": "light",
+						"style": "2",
+						"locale": "br",
+						"toolbar_bg": "#f1f3f6",
+						"hide_top_toolbar": false,
+						"withdateranges": true,
+						"enable_publishing": false,
+						"save_image": false,
+						"hide_top_toolbar": true,
+						"allow_symbol_change": false,
+						"hideideas": true,
+						"customer": "bovespa",
+					});
+				</script>
+			</div>
+			<div class="div2" style='text-align: center;'>BIDB11
+				<script type="text/javascript">
+					new TradingView.widget({
+						"container_id": "div2",
+						"width": "70%",
+						"height": "430px",
+						"symbol": "BMFBOVESPA:BIDB11",
+						"interval": "D",
+						"timezone": "America/Sao_Paulo",
+						"theme": "light",
+						"style": "2",
+						"locale": "br",
+						"toolbar_bg": "#f1f3f6",
+						"hide_top_toolbar": false,
+						"withdateranges": true,
+						"enable_publishing": false,
+						"save_image": false,
+						"hide_top_toolbar": true,
+						"allow_symbol_change": false,
+						"hideideas": true,
+						"customer": "bovespa",
+					});
+				</script>
+			</div>
+			<div class="div3" style='text-align: center;'>BODB11
+				<script type="text/javascript">
+					new TradingView.widget({
+						"container_id": "div3",
+						"width": "70%",
+						"height": "430px",
+						"symbol": "BMFBOVESPA:BODB11",
+						"interval": "D",
+						"timezone": "America/Sao_Paulo",
+						"theme": "light",
+						"style": "2",
+						"locale": "br",
+						"toolbar_bg": "#f1f3f6",
+						"hide_top_toolbar": false,
+						"withdateranges": true,
+						"enable_publishing": false,
+						"save_image": false,
+						"hide_top_toolbar": true,
+						"allow_symbol_change": false,
+						"hideideas": true,
+						"customer": "bovespa",
+					});
+				</script>
+			</div>
+			<div class="div4" style='text-align: center;'>JURO11
+				<script type="text/javascript">
+					new TradingView.widget({
+						"container_id": "div4",
+						"width": "70%",
+						"height": "430px",
+						"symbol": "BMFBOVESPA:JURO11",
+						"interval": "D",
+						"timezone": "America/Sao_Paulo",
+						"theme": "light",
+						"style": "2",
+						"locale": "br",
+						"toolbar_bg": "#f1f3f6",
+						"hide_top_toolbar": false,
+						"withdateranges": true,
+						"enable_publishing": false,
+						"save_image": false,
+						"hide_top_toolbar": true,
+						"allow_symbol_change": false,
+						"hideideas": true,
+						"customer": "bovespa",
+					});
+				</script>
+			</div>
+			<div class="div5" style='text-align: center;'>RBIF11
+				<script type="text/javascript">
+					new TradingView.widget({
+						"container_id": "div5",
+						"width": "70%",
+						"height": "430px",
+						"symbol": "BMFBOVESPA:RBIF11",
+						"interval": "D",
+						"timezone": "America/Sao_Paulo",
+						"theme": "light",
+						"style": "2",
+						"locale": "br",
+						"toolbar_bg": "#f1f3f6",
+						"hide_top_toolbar": false,
+						"withdateranges": true,
+						"enable_publishing": false,
+						"save_image": false,
+						"hide_top_toolbar": true,
+						"allow_symbol_change": false,
+						"hideideas": true,
+						"customer": "bovespa",
+						});
+						</script>
+						</div>
+						<div class="div6" style='text-align: center;'>IFRA11
+						<script type="text/javascript">
+						new TradingView.widget({
+						"container_id": "div6",
+						"width": "70%",
+						"height": "430px",
+					"symbol": "BMFBOVESPA:IFRA11",
+				"interval": "D",
+			"timezone": "America/Sao_Paulo",
+			"theme": "light",
+				"style": "2",
+					"locale": "br",
+						"toolbar_bg": "#f1f3f6",
+						"hide_top_toolbar": false,
+						"withdateranges": true,
+						"enable_publishing": false,
+						"save_image": false,
+						"hide_top_toolbar": true,
+						"allow_symbol_change": false,
+						"hideideas": true,
+						"customer": "bovespa",
+						});
+						</script>
+						</div>
+						<div class="div7" style='text-align: center;'>KDIF11
+						<script type="text/javascript">
+						new TradingView.widget({
+						"container_id": "div7",
+						"width": "70%",
+						"height": "430px",
+					"symbol": "BMFBOVESPA:KDIF11",
+				"interval": "D",
+			"timezone": "America/Sao_Paulo",
+			"theme": "light",
+				"style": "2",
+					"locale": "br",
+						"toolbar_bg": "#f1f3f6",
+						"hide_top_toolbar": false,
+						"withdateranges": true,
+						"enable_publishing": false,
+						"save_image": false,
+						"hide_top_toolbar": true,
+						"allow_symbol_change": false,
+						"hideideas": true,
+						"customer": "bovespa",
+						});
+						</script>
+						</div>
+						<div class="div8" style='text-align: center;'>BDIF11
+						<script type="text/javascript">
+						new TradingView.widget({
+						"container_id": "div8",
+						"width": "70%",
+						"height": "430px",
+					"symbol": "BMFBOVESPA:BDIF11",
+				"interval": "D",
+			"timezone": "America/Sao_Paulo",
+			"theme": "light",
+				"style": "2",
+					"locale": "br",
+						"toolbar_bg": "#f1f3f6",
+						"hide_top_toolbar": false,
+						"withdateranges": true,
+						"enable_publishing": false,
+						"save_image": false,
+						"hide_top_toolbar": true,
+						"allow_symbol_change": false,
+						"hideideas": true,
+						"customer": "bovespa",
+						});
+						</script>
+						</div>
+						<div class="div9" style='text-align: center;'>XPID11
+						<script type="text/javascript">
+						new TradingView.widget({
+						"container_id": "div9",
+						"width": "70%",
+						"height": "430px",
+					"symbol": "BMFBOVESPA:XPID11",
+				"interval": "D",
+			"timezone": "America/Sao_Paulo",
+			"theme": "light",
+				"style": "2",
+					"locale": "br",
+						"toolbar_bg": "#f1f3f6",
+						"hide_top_toolbar": false,
+						"withdateranges": true,
+						"enable_publishing": false,
+						"save_image": false,
+						"hide_top_toolbar": true,
+						"allow_symbol_change": false,
+						"hideideas": true,
+						"customer": "bovespa",
+						});
+						</script>
+						</div>
+					</div>
+					</body>
+					</html>					
