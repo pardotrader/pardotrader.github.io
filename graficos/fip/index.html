@@ -12,7 +12,7 @@
 			const eventList = ["keydown", "mousemove", "wheel", "touchmove", "touchstart", "touchend"];const autoLoadTimeout=setTimeout(runScripts,1e3*autoLoadDuration);function triggerScripts(){runScripts(),clearTimeout(autoLoadTimeout),eventList.forEach(function(t){window.removeEventListener(t,triggerScripts,{passive:!0})})}function runScripts(){document.querySelectorAll("script[delay]").forEach(function(t){t.setAttribute("src",t.getAttribute("delay"))})}eventList.forEach(function(t){window.addEventListener(t,triggerScripts,{passive:!0})});	
 		</script>
 	</head>
-	<script delay src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5232270347895348" crossorigin="anonymous"></script>
+	<script delay="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5232270347895348" crossorigin="anonymous"></script>
 	<script>
 		(function(a,b,c){var d=a.history,e=document,f=navigator||{},g=localStorage,
 			h=encodeURIComponent,i=d.pushState,k=function(){return Math.random().toString(36)},
