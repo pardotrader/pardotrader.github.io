@@ -1,14 +1,14 @@
 <html lang="pt">
 	<head>
 		<title>Carteira</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 		<meta http-equiv="refresh" content="300">
 		<link rel="dns-prefetch" href="https://br.advfn.com">
 		<link rel="preconnect" href="https://br.advfn.com" crossorigin>
 		<link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
 		<script>
-			const autoLoadDuration = 5;
+			const autoLoadDuration = 2;
 			const eventList = ["keydown", "mousemove", "wheel", "touchmove", "touchstart", "touchend"];const autoLoadTimeout=setTimeout(runScripts,1e3*autoLoadDuration);function triggerScripts(){runScripts(),clearTimeout(autoLoadTimeout),eventList.forEach(function(t){window.removeEventListener(t,triggerScripts,{passive:!0})})}function runScripts(){document.querySelectorAll("script[delay]").forEach(function(t){t.setAttribute("src",t.getAttribute("delay"))})}eventList.forEach(function(t){window.addEventListener(t,triggerScripts,{passive:!0})});	
 		</script>
 		<script>
@@ -31,37 +31,74 @@
 				trackException:function q(r,s){return n("exception",null,null,null,null,r,s)}}})
 				(window,"UA-24234789-14",{anonymizeIp:false,siteSpeedSampleRate: 90,colorDepth:true,characterSet:true,screenSize:true,language:true})
 		</script>
-		<style>
-			.container {
-			display: grid; 
-			grid-template-columns: 1fr 1fr 1fr; 
-			grid-template-rows: 1fr 1fr; 
-			gap: 0px 0px; 
-			grid-template-areas: 
-			"div1 div1 div1"
-			"div2 div2 div2"; 
-			width: 100%; 
-			height: 100%; 
-			}
-			.div1 {
-			display: grid; 
-			grid-template-columns: 1fr 1fr 1fr; 
-			grid-template-rows: 1fr; 
-			gap: 0px 0px; 
-			grid-template-areas: 
-			". . ."; 
-			grid-area: div1; 
-			}
-			.div2 {
-			display: grid; 
-			grid-template-columns: 1fr 1fr 1fr; 
-			grid-template-rows: 1fr; 
-			gap: 0px 0px; 
-			grid-template-areas: 
-			". . ."; 
-			grid-area: div2; 
-			}
-		</style>
+    <style>
+		@media screen and (min-width: 1800px) {
+        .parent {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-column-gap: 2px;
+		grid-row-gap: 2px;
+        }		
+        .div2 { grid-area: 1 / 2 / 2 / 3; }
+        .div3 { grid-area: 1 / 3 / 2 / 4; }
+        .div4 { grid-area: 1 / 4 / 2 / 5; }
+        .div5 { grid-area: 2 / 1 / 3 / 2; }
+        .div6 { grid-area: 2 / 2 / 3 / 3; }
+        .div7 { grid-area: 2 / 3 / 3 / 4; }
+        .div8 { grid-area: 2 / 4 / 3 / 5; }
+		}
+        @media screen and (min-width: 1400px) and (max-width: 1800px) {
+		.parent {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		}		
+		.div1 { grid-area: 1 / 1 / 2 / 2; }
+		.div2 { grid-area: 1 / 2 / 2 / 3; }
+		.div3 { grid-area: 1 / 3 / 2 / 4; }
+		.div4 { grid-area: 2 / 1 / 3 / 2; }
+		.div5 { grid-area: 2 / 2 / 3 / 3; }
+		.div6 { grid-area: 2 / 3 / 3 / 4; }
+		.div7 { grid-area: 3 / 1 / 4 / 2; }
+		.div8 { grid-area: 3 / 2 / 4 / 3; }
+		}
+        @media screen and (min-width: 1000px) and (max-width: 1400px) {
+		.parent {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		}		
+		.div1 { grid-area: 1 / 1 / 2 / 2; }
+		.div2 { grid-area: 1 / 2 / 2 / 3; }
+		.div3 { grid-area: 2 / 1 / 3 / 2; }
+		.div4 { grid-area: 2 / 2 / 3 / 3; }
+		.div5 { grid-area: 3 / 1 / 4 / 2; }
+		.div6 { grid-area: 3 / 2 / 4 / 3; }
+		.div7 { grid-area: 4 / 1 / 5 / 2; }
+		.div8 { grid-area: 4 / 2 / 5 / 3; }
+		}
+		@media screen and (max-width: 600px) {
+		.parent {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(8, 1fr);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		}		
+		.div1 { grid-area: 1 / 1 / 2 / 2; }
+		.div2 { grid-area: 2 / 1 / 3 / 2; }
+		.div3 { grid-area: 3 / 1 / 4 / 2; }
+		.div4 { grid-area: 4 / 1 / 5 / 2; }
+		.div5 { grid-area: 5 / 1 / 6 / 2; }
+		.div6 { grid-area: 6 / 1 / 7 / 2; }
+		.div7 { grid-area: 7 / 1 / 8 / 2; }
+		.div8 { grid-area: 8 / 1 / 9 / 2; }
+	</style>
 	</head>
 	<script delay="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5232270347895348" crossorigin="anonymous"></script>
 	<body>

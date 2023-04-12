@@ -1,14 +1,14 @@
 <html lang="pt">
 	<head>
 		<title>Gráfico Ações</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 		<meta http-equiv="refresh" content="300">
 		<link rel="dns-prefetch" href="https://br.advfn.com">
 		<link rel="preconnect" href="https://br.advfn.com" crossorigin>
 		<link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
 		<script>
-			const autoLoadDuration = 5;
+			const autoLoadDuration = 2;
 			const eventList = ["keydown", "mousemove", "wheel", "touchmove", "touchstart", "touchend"];const autoLoadTimeout=setTimeout(runScripts,1e3*autoLoadDuration);function triggerScripts(){runScripts(),clearTimeout(autoLoadTimeout),eventList.forEach(function(t){window.removeEventListener(t,triggerScripts,{passive:!0})})}function runScripts(){document.querySelectorAll("script[delay]").forEach(function(t){t.setAttribute("src",t.getAttribute("delay"))})}eventList.forEach(function(t){window.addEventListener(t,triggerScripts,{passive:!0})});	
 		</script>
 		<script>
@@ -33,26 +33,92 @@
 		</script>
 	</head>
 	<script delay="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5232270347895348" crossorigin="anonymous"></script>
-	<style>		.parent{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(3,1fr);grid-column-gap:0;grid-row-gap:0}.div1{grid-area:1/1/2/2}.div2{grid-area:1/2/2/3}.div3{grid-area:1/3/2/4}.div4{grid-area:1/4/2/5}.div5{grid-area:2/1/3/2}.div6{grid-area:2/2/3/3}.div7{grid-area:2/3/3/4}.div8{grid-area:2/4/3/5}.div9{grid-area:3/1/4/2}.div10{grid-area:3/2/4/3}.div11{grid-area:3/3/4/4}.div12{grid-area:3/4/4/5}
+    <style>
+		@media screen and (min-width: 1800px) {
+        .parent {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-column-gap: 2px;
+		grid-row-gap: 2px;
+        }		
+        .div2 { grid-area: 1 / 2 / 2 / 3; }
+        .div3 { grid-area: 1 / 3 / 2 / 4; }
+        .div4 { grid-area: 1 / 4 / 2 / 5; }
+        .div5 { grid-area: 2 / 1 / 3 / 2; }
+        .div6 { grid-area: 2 / 2 / 3 / 3; }
+        .div7 { grid-area: 2 / 3 / 3 / 4; }
+        .div8 { grid-area: 2 / 4 / 3 / 5; }
+		}
+        @media screen and (min-width: 1400px) and (max-width: 1800px) {
+		.parent {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		}		
+		.div1 { grid-area: 1 / 1 / 2 / 2; }
+		.div2 { grid-area: 1 / 2 / 2 / 3; }
+		.div3 { grid-area: 1 / 3 / 2 / 4; }
+		.div4 { grid-area: 2 / 1 / 3 / 2; }
+		.div5 { grid-area: 2 / 2 / 3 / 3; }
+		.div6 { grid-area: 2 / 3 / 3 / 4; }
+		.div7 { grid-area: 3 / 1 / 4 / 2; }
+		.div8 { grid-area: 3 / 2 / 4 / 3; }
+		}
+        @media screen and (min-width: 1000px) and (max-width: 1400px) {
+		.parent {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		}		
+		.div1 { grid-area: 1 / 1 / 2 / 2; }
+		.div2 { grid-area: 1 / 2 / 2 / 3; }
+		.div3 { grid-area: 2 / 1 / 3 / 2; }
+		.div4 { grid-area: 2 / 2 / 3 / 3; }
+		.div5 { grid-area: 3 / 1 / 4 / 2; }
+		.div6 { grid-area: 3 / 2 / 4 / 3; }
+		.div7 { grid-area: 4 / 1 / 5 / 2; }
+		.div8 { grid-area: 4 / 2 / 5 / 3; }
+		}
+		@media screen and (max-width: 600px) {
+		.parent {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(8, 1fr);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		}		
+		.div1 { grid-area: 1 / 1 / 2 / 2; }
+		.div2 { grid-area: 2 / 1 / 3 / 2; }
+		.div3 { grid-area: 3 / 1 / 4 / 2; }
+		.div4 { grid-area: 4 / 1 / 5 / 2; }
+		.div5 { grid-area: 5 / 1 / 6 / 2; }
+		.div6 { grid-area: 6 / 1 / 7 / 2; }
+		.div7 { grid-area: 7 / 1 / 8 / 2; }
+		.div8 { grid-area: 8 / 1 / 9 / 2; }
 	</style>
 	<body>
 		<div class="parent">
 			<div id="div1">
 				<input type="text" id="input1" value="" class="form-control"> <span class="input-group-btn">
-					<input type="submit" value="OK" onclick="graf1();" class="btn btn-success"/> DOLF23			  
-					<img alt="gráfico" id="image1" src="https://br.advfn.com/p.php?pid=staticchart&s=DOLF23&t=23&p=3&dm=2&vol=0&width=470&height=290" width="470" height="304">
+					<input type="submit" value="OK" onclick="graf1();" class="btn btn-success"/> DOLF24			  
+					<img alt="gráfico" id="image1" src="https://br.advfn.com/p.php?pid=staticchart&s=DOLF24&t=23&p=3&dm=2&vol=0&width=470&height=290" width="470" height="304">
 				</span>
 			</div>
 			<div class="div2">
 				<input type="text" id="input2" value="" class="form-control"> <span class="input-group-btn">
-					<input type="submit" value="OK" onclick="graf2();" class="btn btn-success"/> DOLG23
-					<img alt="gráfico" id="image2" src="https://br.advfn.com/p.php?pid=staticchart&s=DOLG23&t=23&p=3&dm=2&vol=0&width=470&height=290" width="470" height="304">
+					<input type="submit" value="OK" onclick="graf2();" class="btn btn-success"/> DOLG24
+					<img alt="gráfico" id="image2" src="https://br.advfn.com/p.php?pid=staticchart&s=DOLG24&t=23&p=3&dm=2&vol=0&width=470&height=290" width="470" height="304">
 				</span>
 			</div>
 			<div class="div3">
 				<input type="text" id="input3" value="" class="form-control"> <span class="input-group-btn">
-					<input type="submit" value="OK" onclick="graf3();" class="btn btn-success"/> DOLH23
-					<img alt="gráfico" id="image3" src="https://br.advfn.com/p.php?pid=staticchart&s=DOLH23&t=23&p=3&dm=2&vol=0&width=470&height=290" width="470" height="304">
+					<input type="submit" value="OK" onclick="graf3();" class="btn btn-success"/> DOLH24
+					<img alt="gráfico" id="image3" src="https://br.advfn.com/p.php?pid=staticchart&s=DOLH24&t=23&p=3&dm=2&vol=0&width=470&height=290" width="470" height="304">
 				</span>
 			</div>
 			<div class="div4">
@@ -75,38 +141,38 @@
 			</div>
 			<div class="div7">
 				<input type="text" id="input7" value="" class="form-control"> <span class="input-group-btn">
-					<input type="submit" value="OK" onclick="graf7();" class="btn btn-success"/> DOLN22
-					<img alt="gráfico" id="image7" src="https://br.advfn.com/p.php?pid=staticchart&s=DOLN22&t=23&p=3&dm=2&vol=0&width=470&height=290" width="470" height="304">
+					<input type="submit" value="OK" onclick="graf7();" class="btn btn-success"/> DOLN23
+					<img alt="gráfico" id="image7" src="https://br.advfn.com/p.php?pid=staticchart&s=DOLN23&t=23&p=3&dm=2&vol=0&width=470&height=290" width="470" height="304">
 				</span>
 			</div>
 			<div class="div8">
 				<input type="text" id="input8" value="" class="form-control"> <span class="input-group-btn">
-					<input type="submit" value="OK" onclick="graf8();" class="btn btn-success"/> DOLQ22
-					<img alt="gráfico" id="image8" src="https://br.advfn.com/p.php?pid=staticchart&s=DOLQ22&t=23&p=3&dm=2&vol=0&width=470&height=290" width="470" height="304">
+					<input type="submit" value="OK" onclick="graf8();" class="btn btn-success"/> DOLQ23
+					<img alt="gráfico" id="image8" src="https://br.advfn.com/p.php?pid=staticchart&s=DOLQ23&t=23&p=3&dm=2&vol=0&width=470&height=290" width="470" height="304">
 				</span>
 			</div>
 			<div id="div9">
 				<input type="text" id="input9" value="" class="form-control"> <span class="input-group-btn">
-					<input type="submit" value="OK" onclick="graf9();" class="btn btn-success"/> DOLU22		  
-					<img alt="gráfico" id="image9" src="https://br.advfn.com/p.php?pid=staticchart&s=DOLU22&t=23&p=3&dm=2&vol=0&width=470&height=290" width="470" height="304">
+					<input type="submit" value="OK" onclick="graf9();" class="btn btn-success"/> DOLU23  
+					<img alt="gráfico" id="image9" src="https://br.advfn.com/p.php?pid=staticchart&s=DOLU23&t=23&p=3&dm=2&vol=0&width=470&height=290" width="470" height="304">
 				</span>
 			</div>
 			<div class="div10">
 				<input type="text" id="input10" value="" class="form-control"> <span class="input-group-btn">
-					<input type="submit" value="OK" onclick="graf10();" class="btn btn-success"/> DOLV22
-					<img alt="gráfico" id="image10" src="https://br.advfn.com/p.php?pid=staticchart&s=DOLV22&t=23&p=3&dm=2&vol=0&width=470&height=290" width="470" height="304">
+					<input type="submit" value="OK" onclick="graf10();" class="btn btn-success"/> DOLV23
+					<img alt="gráfico" id="image10" src="https://br.advfn.com/p.php?pid=staticchart&s=DOLV23&t=23&p=3&dm=2&vol=0&width=470&height=290" width="470" height="304">
 				</span>
 			</div>
 			<div class="div11">
 				<input type="text" id="input11" value="" class="form-control"> <span class="input-group-btn">
-					<input type="submit" value="OK" onclick="graf11();" class="btn btn-success"/> DOLX22
-					<img alt="gráfico" id="image11" src="https://br.advfn.com/p.php?pid=staticchart&s=DOLX22&t=23&p=3&dm=2&vol=0&width=470&height=290" width="470" height="304">
+					<input type="submit" value="OK" onclick="graf11();" class="btn btn-success"/> DOLX23
+					<img alt="gráfico" id="image11" src="https://br.advfn.com/p.php?pid=staticchart&s=DOLX23&t=23&p=3&dm=2&vol=0&width=470&height=290" width="470" height="304">
 				</span>
 			</div>
 			<div class="div12">
 				<input type="text" id="input12" value="" class="form-control"> <span class="input-group-btn">
-					<input type="submit" value="OK" onclick="graf12();" class="btn btn-success"/> DOLZ22
-					<img alt="gráfico" id="image12" src="https://br.advfn.com/p.php?pid=staticchart&s=DOLZ22&t=23&p=3&dm=2&vol=0&width=470&height=290" width="470" height="304">
+					<input type="submit" value="OK" onclick="graf12();" class="btn btn-success"/> DOLZ23
+					<img alt="gráfico" id="image12" src="https://br.advfn.com/p.php?pid=staticchart&s=DOLZ23&t=23&p=3&dm=2&vol=0&width=470&height=290" width="470" height="304">
 				</span>
 			</div>
 		</div>
