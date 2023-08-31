@@ -196,6 +196,31 @@
 			setCookie('graf12',input12,1000000);
 		}
 	</script>
+	<select id="periodSelect">
+		<option value="0">0</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+	</select>
+	<button onclick="changePeriod()">Change Period</button> 
+	<script>
+		function changePeriod() {
+			// Get selected value
+			var period = document.getElementById('periodSelect').value;
+			// Get images
+			var images = document.querySelectorAll('img');
+			// Update images
+			images.forEach(function(img) {
+				img.src = img.src.replace(/p=\d/, 'p=' + period); 
+			});
+		}
+	</script>
 	<body>
 		<div class="parent">
 			<div id="div1">
