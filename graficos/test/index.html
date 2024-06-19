@@ -12,7 +12,7 @@
       const autoLoadDuration = 2;
       const eventList = ["keydown", "mousemove", "wheel", "touchmove", "touchstart", "touchend"];const autoLoadTimeout=setTimeout(runScripts,1e3*autoLoadDuration);function triggerScripts(){runScripts(),clearTimeout(autoLoadTimeout),eventList.forEach(function(t){window.removeEventListener(t,triggerScripts,{passive:!0})})}function runScripts(){document.querySelectorAll("script[delay]").forEach(function(t){t.setAttribute("src",t.getAttribute("delay"))})}eventList.forEach(function(t){window.addEventListener(t,triggerScripts,{passive:!0})});
     </script>
-    <script type="text/javascript" delay="https://s3.amazonaws.com/tradingview/tv.js"></script>
+    <script delay="https://s3.amazonaws.com/tradingview/tv.js"></script>
     <script>
       (function(a,b,c){var d=a.history,e=document,f=navigator||{},g=localStorage,
         h=encodeURIComponent,i=d.pushState,k=function(){return Math.random().toString(36)},
@@ -46,7 +46,7 @@
   <body>
     <div class="tradingview-widget-container">
       <div class="tradingview-widget-container__widget"></div>
-      <script type="text/javascript" delay="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js">
+      <script delay="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js">
         {
           "symbols": [
           {
