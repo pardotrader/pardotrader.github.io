@@ -5,32 +5,37 @@ function loadLazyElements() {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const lazyElement = entry.target;
-        // Carregue o gráfico TradingView aqui
         const symbol = lazyElement.innerText.trim();
+
+        // Crie o contêiner para o gráfico TradingView
         const container = document.createElement('div');
         container.style.width = '70%';
         container.style.height = '430px';
+
+        // Crie o elemento script para carregar o gráfico TradingView
+        const script = document.createElement('script');
+        script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js';
+        script.async = true;
+        script.innerHTML = `{
+          "symbols": [
+            {
+              "description": "",
+              "proName": "BMFBOVESPA:${symbol}"
+            }
+          ],
+          "showSymbolLogo": true,
+          "colorTheme": "light",
+          "isTransparent": false,
+          "displayMode": "adaptive",
+          "locale": "br",
+          "customer": "bovespa"
+        }`;
+
+        // Adicione o contêiner e o script ao elemento lazy-load
         lazyElement.innerHTML = '';
         lazyElement.appendChild(container);
-        new TradingView.widget({
-          'container_id': container.id,
-          'width': '100%',
-          'height': '100%',
-          'symbol': `BMFBOVESPA:${symbol}`,
-          'interval': 'D',
-          'timezone': 'America/Sao_Paulo',
-          'theme': 'light',
-          'style': '2',
-          'locale': 'br',
-          'toolbar_bg': '#f1f3f6',
-          'hide_top_toolbar': true,
-          'withdateranges': true,
-          'enable_publishing': false,
-          'save_image': false,
-          'allow_symbol_change': false,
-          'hideideas': true,
-          'customer': 'bovespa',
-        });
+        lazyElement.appendChild(script);
+
         observer.unobserve(lazyElement);
       }
     });
@@ -40,4 +45,5 @@ function loadLazyElements() {
     observer.observe(lazyElement);
   });
 }
+
 window.addEventListener('load', loadLazyElements);
