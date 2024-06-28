@@ -9,7 +9,7 @@
 		<link rel="preconnect" href="www.tradingview-widget.com" crossorigin>		
     <link rel="preconnect" href="https://s3.amazonaws.com" crossorigin>
     <link rel="preconnect" href="https://static.tradingview.com" crossorigin>
-    <script type="text/javascript" defer>
+    <script type="text/javascript">
       const autoLoadDuration = 0.8;
       const eventList = ["keydown", "mousemove", "wheel", "touchmove", "touchstart", "touchend"];
       const autoLoadTimeout=setTimeout(runScripts,1e3*autoLoadDuration);function triggerScripts(){runScripts(),clearTimeout(autoLoadTimeout),eventList.forEach(function(t){window.removeEventListener(t,triggerScripts,{passive:!0})})}function runScripts(){document.querySelectorAll("script[delay]").forEach(function(t){t.setAttribute("src",t.getAttribute("delay"))})}eventList.forEach(function(t){window.addEventListener(t,triggerScripts,{passive:!0})});
@@ -172,7 +172,7 @@
         </script>
       </div>
       <div class="div4" style='text-align: center;'>JURO11
-        <script type="text/javascript" defer>
+        <script type="text/javascript">
           new TradingView.widget({
             "container_id": "div4",
             "width": "70%",
@@ -196,7 +196,7 @@
         </script>
       </div>
       <div class="div5" style='text-align: center;'>RBIF11
-        <script type="text/javascript" defer>
+        <script type="text/javascript">
           new TradingView.widget({
             "container_id": "div5",
             "width": "70%",
@@ -220,7 +220,7 @@
             </script>
             </div>
             <div class="div6" style='text-align: center;'>IFRA11
-            <script type="text/javascript" defer>
+            <script type="text/javascript">
             new TradingView.widget({
             "container_id": "div6",
             "width": "70%",
@@ -244,7 +244,7 @@
             </script>
             </div>
             <div class="div7" style='text-align: center;'>KDIF11
-            <script type="text/javascript" defer>
+            <script type="text/javascript">
             new TradingView.widget({
             "container_id": "div7",
             "width": "70%",
@@ -268,7 +268,7 @@
             </script>
             </div>
             <div class="div8" style='text-align: center;'>BDIF11
-            <script type="text/javascript" defer>
+            <script type="text/javascript">
             new TradingView.widget({
             "container_id": "div8",
             "width": "70%",
@@ -292,7 +292,7 @@
             </script>
             </div>
             <div class="div9" style='text-align: center;'>XPID11
-            <script type="text/javascript" defer>
+            <script type="text/javascript">
             new TradingView.widget({
             "container_id": "div9",
             "width": "70%",
