@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt">
 	<head>
-		<title>Varejo</title>
+		<title>Gráficos por Segmentos - PardoTrader - Trades e Investimentos</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 		<link rel="dns-prefetch" href="https://res.cloudinary.com">
@@ -28,7 +28,15 @@
 	</head>
 	<style>
 		* {  box-sizing: border-box;}
-		body {  margin: 0;  font-family: Arial;}
+		body {  margin: 0;  font-family: Arial, sans-serif;}
+		.header_nifty_dark { width: 100%; background: #1c314c; padding: 25px 0 20px 0; text-align: center; }
+		.header_nifty_dark img.custom-logo { max-width: 320px; width: 100%; height: auto; display: inline-block; }
+		.header_nifty_dark .site-description { color: #fff; margin: 4px 0 0 0; font-size: 14px; font-style: italic; }
+		.nav-nifty { background: #1c314c; border-top: 1px solid rgba(255,255,255,0.15); border-bottom: 1px solid rgba(0,0,0,0.1); }
+		.nav-nifty .nav-container { max-width: 1170px; margin: 0 auto; padding: 0 15px; display: flex; justify-content: flex-start; align-items: center; flex-wrap: wrap; }
+		.nav-nifty ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; }
+		.nav-nifty ul li a { color: #fff; text-decoration: none; text-transform: uppercase; font-weight: 600; font-size: 14px; padding: 14px 18px; display: inline-block; transition: color 0.2s ease; }
+		.nav-nifty ul li a:hover, .nav-nifty ul li.active a { color: #01d2d6; border-top: 3px solid #01d2d6; padding-top: 11px; }
 		.header {  text-align: center;  padding: 32px;}
 		.row {  display: -ms-flexbox; /* IE10 */  display: flex;  -ms-flex-wrap: wrap; /* IE10 */  flex-wrap: wrap;  padding: 0 20px;}
 		/* Create four equal columns that sits next to each other */
@@ -42,9 +50,28 @@
 		.column {    -ms-flex: 100%;    flex: 100%;    max-width: 100%;  }}
 	</style>
 	<body>
-		<a href="https://pardotrader.github.io/">Voltar</a>
+		<section class="header_nifty_dark">
+			<a href="https://pardotrader.github.io/">
+				<img src="https://pardotrader.github.io/img/pardotrader.png" class="custom-logo" alt="pardotrader" width="617" height="119">
+				<p class="site-description">@pardotrader</p>
+			</a>
+		</section>
+		<header role="banner">
+			<nav class="nav-nifty">
+				<div class="nav-container">
+					<ul>
+						<li><a href="https://pardotrader.github.io/">Início</a></li>
+						<li><a href="https://pardotrader.github.io/categoria/planilhas/">Planilhas</a></li>
+						<li><a href="https://pardotrader.github.io/categoria/analise-tecnica/">Análise Técnica</a></li>
+						<li><a href="https://pardotrader.github.io/codigo-indice-futuro-dolar/">Código Futuro</a></li>
+						<li><a href="https://pardotrader.github.io/calendario-financeiro/">Calendário</a></li>
+						<li class="active"><a href="https://pardotrader.github.io/graficos/">Gráficos</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
 		<!-- Photo Grid -->
-		<h1>Gráficos por seguimentos de ações</h1>
+		<h1 style="text-align:center; margin-top:20px;">Gráficos por segmentos de ações</h1>
 		<div class="row"> 
 			<div class="column">     
 				<a href="https://pardotrader.github.io/graficos/indices/"><img alt="gráfico" src="https://res.cloudinary.com/ptrader/image/upload/q_auto,f_auto/indices.jpg" style="width:100%" loading="lazy">Indices</a>
