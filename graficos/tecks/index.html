@@ -13,26 +13,7 @@
       const autoLoadTimeout=setTimeout(runScripts,1e3*autoLoadDuration);function triggerScripts(){runScripts(),clearTimeout(autoLoadTimeout),eventList.forEach(function(t){window.removeEventListener(t,triggerScripts,{passive:!0})})}function runScripts(){document.querySelectorAll("script[delay]").forEach(function(t){t.setAttribute("src",t.getAttribute("delay"))})}eventList.forEach(function(t){window.addEventListener(t,triggerScripts,{passive:!0})});
     </script>
     <script delay="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5232270347895348"></script>
-		<script>
-			(function(a,b,c){var d=a.history,e=document,f=navigator||{},g=localStorage,
-				h=encodeURIComponent,i=d.pushState,k=function(){return Math.random().toString(36)},
-				l=function(){return g.cid||(g.cid=k()),g.cid},m=function(r){var s=[];for(var t in r)
-				r.hasOwnProperty(t)&&void 0!==r[t]&&s.push(h(t)+"="+h(r[t]));return s.join("&")},
-				n=function(r,s,t,u,v,w,x){var z="https://www.google-analytics.com/collect",
-					A=m({v:"1",ds:"web",aip:c.anonymizeIp?1:void 0,tid:b,cid:l(),t:r||"pageview",
-						sd:c.colorDepth&&screen.colorDepth?screen.colorDepth+"-bits":void 0,dr:e.referrer||
-						void 0,dt:e.title,dl:e.location.origin+e.location.pathname+e.location.search,ul:c.language?
-						(f.language||"").toLowerCase():void 0,de:c.characterSet?e.characterSet:void 0,
-						sr:c.screenSize?(a.screen||{}).width+"x"+(a.screen||{}).height:void 0,vp:c.screenSize&&
-						a.visualViewport?(a.visualViewport||{}).width+"x"+(a.visualViewport||{}).height:void 0,
-						ec:s||void 0,ea:t||void 0,el:u||void 0,ev:v||void 0,exd:w||void 0,exf:"undefined"!=typeof x&&
-						!1==!!x?0:void 0});if(f.sendBeacon)f.sendBeacon(z,A);else{var y=new XMLHttpRequest;
-					y.open("POST",z,!0),y.send(A)}};d.pushState=function(r){return"function"==typeof d.onpushstate&&
-				d.onpushstate({state:r}),setTimeout(n,c.delay||10),i.apply(d,arguments)},n(),
-				a.ma={trackEvent:function o(r,s,t,u){return n("event",r,s,t,u)},
-				trackException:function q(r,s){return n("exception",null,null,null,null,r,s)}}})
-				(window,"UA-24234789-14",{anonymizeIp:false,siteSpeedSampleRate: 90,colorDepth:true,characterSet:true,screenSize:true,language:true})
-		</script>
+		<script src="/graficos/analytics.js" defer></script>
 		<style>
 			.container {
 			display: grid; 
@@ -208,32 +189,32 @@
 		</div>
 		<p><div style="text-align: center;">FB<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=FB&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
 		<p><div style="text-align: center;">FBOK34<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=FBOK34&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
-		<p><div style="text-align: center;">AAPL<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=AAPL&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
-		<p><div style="text-align: center;">AAPL34<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=AAPL34&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
-		<p><div style="text-align: center;">AMZN<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=AMZN&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
-		<p><div style="text-align: center;">AMZO34<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=AMZO34&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
-		<p><div style="text-align: center;">NFLX<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=NFLX&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
-		<p><div style="text-align: center;">NFLX34<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=NFLX34&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
-		<p><div style="text-align: center;">GOOG<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=GOOG&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
-		<p><div style="text-align: center;">GOGL34<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=GOGL34&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
-		<p><div style="text-align: center;">BABA<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=BABA&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
-		<p><div style="text-align: center;">BABA34<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=BABA34&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
-		<p><div style="text-align: center;">BIDU<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=BIDU&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
-		<p><div style="text-align: center;">BIDU34<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=BIDU34&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
-		<p><div style="text-align: center;">NVDA<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=NVDA&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
-		<p><div style="text-align: center;">NVDA34<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=NVDA34&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
-		<p><div style="text-align: center;">TLSA<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=TLSA&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
-		<p><div style="text-align: center;">TLSA34<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=TLSA34&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
-		<p><div style="text-align: center;">TWTR<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=TWTR&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
-		<p><div style="text-align: center;">TWTR34<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=TWTR34&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
-		<p><div style="text-align: center;">MSFT<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=MSFT&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
-		<p><div style="text-align: center;">MSFT34<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=MSFT34&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
-		<p><div style="text-align: center;">FNGS <img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=FNGS &t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
-		<p><div style="text-align: center;">TECK11<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=TECK11&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
-		<p><div style="text-align: center;">QQQ<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=QQQ&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
-		<p><div style="text-align: center;">NASD11<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=NASD11&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
-		<p><div style="text-align: center;">IVV<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=IVV&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
-		<p><div style="text-align: center;">BIVB39<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=BIVB39&t=23&p=4&dm=4&vol=0&width=660&height=440"/></div></p>
+		<p><div style="text-align: center;">AAPL<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=AAPL&t=23&p=4&dm=4&vol=0&width=660&height=440"/ loading="lazy"></div></p>
+		<p><div style="text-align: center;">AAPL34<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=AAPL34&t=23&p=4&dm=4&vol=0&width=660&height=440"/ loading="lazy"></div></p>
+		<p><div style="text-align: center;">AMZN<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=AMZN&t=23&p=4&dm=4&vol=0&width=660&height=440"/ loading="lazy"></div></p>
+		<p><div style="text-align: center;">AMZO34<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=AMZO34&t=23&p=4&dm=4&vol=0&width=660&height=440"/ loading="lazy"></div></p>
+		<p><div style="text-align: center;">NFLX<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=NFLX&t=23&p=4&dm=4&vol=0&width=660&height=440"/ loading="lazy"></div></p>
+		<p><div style="text-align: center;">NFLX34<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=NFLX34&t=23&p=4&dm=4&vol=0&width=660&height=440"/ loading="lazy"></div></p>
+		<p><div style="text-align: center;">GOOG<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=GOOG&t=23&p=4&dm=4&vol=0&width=660&height=440"/ loading="lazy"></div></p>
+		<p><div style="text-align: center;">GOGL34<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=GOGL34&t=23&p=4&dm=4&vol=0&width=660&height=440"/ loading="lazy"></div></p>
+		<p><div style="text-align: center;">BABA<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=BABA&t=23&p=4&dm=4&vol=0&width=660&height=440"/ loading="lazy"></div></p>
+		<p><div style="text-align: center;">BABA34<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=BABA34&t=23&p=4&dm=4&vol=0&width=660&height=440"/ loading="lazy"></div></p>
+		<p><div style="text-align: center;">BIDU<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=BIDU&t=23&p=4&dm=4&vol=0&width=660&height=440"/ loading="lazy"></div></p>
+		<p><div style="text-align: center;">BIDU34<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=BIDU34&t=23&p=4&dm=4&vol=0&width=660&height=440"/ loading="lazy"></div></p>
+		<p><div style="text-align: center;">NVDA<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=NVDA&t=23&p=4&dm=4&vol=0&width=660&height=440"/ loading="lazy"></div></p>
+		<p><div style="text-align: center;">NVDA34<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=NVDA34&t=23&p=4&dm=4&vol=0&width=660&height=440"/ loading="lazy"></div></p>
+		<p><div style="text-align: center;">TLSA<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=TLSA&t=23&p=4&dm=4&vol=0&width=660&height=440"/ loading="lazy"></div></p>
+		<p><div style="text-align: center;">TLSA34<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=TLSA34&t=23&p=4&dm=4&vol=0&width=660&height=440"/ loading="lazy"></div></p>
+		<p><div style="text-align: center;">TWTR<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=TWTR&t=23&p=4&dm=4&vol=0&width=660&height=440"/ loading="lazy"></div></p>
+		<p><div style="text-align: center;">TWTR34<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=TWTR34&t=23&p=4&dm=4&vol=0&width=660&height=440"/ loading="lazy"></div></p>
+		<p><div style="text-align: center;">MSFT<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=MSFT&t=23&p=4&dm=4&vol=0&width=660&height=440"/ loading="lazy"></div></p>
+		<p><div style="text-align: center;">MSFT34<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=MSFT34&t=23&p=4&dm=4&vol=0&width=660&height=440"/ loading="lazy"></div></p>
+		<p><div style="text-align: center;">FNGS <img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=FNGS &t=23&p=4&dm=4&vol=0&width=660&height=440"/ loading="lazy"></div></p>
+		<p><div style="text-align: center;">TECK11<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=TECK11&t=23&p=4&dm=4&vol=0&width=660&height=440"/ loading="lazy"></div></p>
+		<p><div style="text-align: center;">QQQ<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=QQQ&t=23&p=4&dm=4&vol=0&width=660&height=440"/ loading="lazy"></div></p>
+		<p><div style="text-align: center;">NASD11<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=NASD11&t=23&p=4&dm=4&vol=0&width=660&height=440"/ loading="lazy"></div></p>
+		<p><div style="text-align: center;">IVV<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=IVV&t=23&p=4&dm=4&vol=0&width=660&height=440"/ loading="lazy"></div></p>
+		<p><div style="text-align: center;">BIVB39<img alt="gráfico" src="https://br.advfn.com/p.php?pid=staticchart&s=BIVB39&t=23&p=4&dm=4&vol=0&width=660&height=440"/ loading="lazy"></div></p>
 		
 	</body>
 </html>
